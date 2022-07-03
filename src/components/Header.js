@@ -7,10 +7,16 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div>
-                
+            <div className="header">
+                <div className="introduction">
+                    <p>I am</p>
+                    <h1>Tom Newton</h1>
+                    <p>A Digital Designer based in London, England.</p>
+                </div>
             </div>
         )
     }
 
 }
+
+export default Header
