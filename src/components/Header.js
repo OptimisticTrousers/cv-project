@@ -10,7 +10,7 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div className="introduction">
-                    <p className="i-am">I am</p>
+                    <p className="i-am">I AM</p>
                     <h1>Tom Newton</h1>
                     <p className="occupation">A Digital Designer based in London, England.</p>
                 </div>

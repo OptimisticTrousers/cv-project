@@ -1,3 +1,13 @@
+@font-face {
+    font-family: hops-and-barley;
+    src: url(../fonts/Fontspring-DEMO-hops_and_barley_c3b.otf)
+}
+
+@font-face {
+    font-family: futura-light;
+    src: url(../fonts/Futura\ Std\ Light.ttf)
+}
+
 div.header {
     background-color: #00a4e7;
     height: 5%;
@@ -8,4 +18,16 @@ div.header {
 
 div.introduction{
     padding: 2.5rem;
+}
+
+div.introduction>*{
+    text-align: center;
+}
+
+p.i-am{
+    font-family: futura-light;
+}
+
+h1{
+    font-family: hops-and-barley;
 }
