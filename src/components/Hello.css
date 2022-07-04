@@ -1,0 +1,18 @@
+.hello-background{
+    background-color: white;
+}
+
+.hello {
+    padding: 2.5rem;
+}
+
+img{
+    border-radius: 75%;
+}
+
+.hello>*{
+    line-height: 2;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
