@@ -10,15 +10,22 @@
 
 .head > h2{
     text-align: start;
+    padding-bottom: 1rem;
 }
-
-
 
 .overview{
     display: flex;
 }
+.overview>*{
+    line-height: 1.75;
+}
 
 .contact-item {
+    gap: 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.contact-item > a{
+    align-self: center;
 }
