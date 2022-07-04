@@ -13,6 +13,6 @@ img{
 .hello>*{
     line-height: 2;
     text-align: center;
-    width: 50%;
+    width: max(45%, 287px);
     margin: 0 auto;
 }
