@@ -43,6 +43,10 @@ p.i-am{
     font-family: futura-light;
     color: #78a5bd;
     background-color: white;
+    height: max-content;
+    width: 15%;
+    font-weight: 900;
+    border-radius: 50%;
 }
 
 h1{
