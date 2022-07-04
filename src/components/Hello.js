@@ -7,11 +7,11 @@ class Hello extends React.Component {
     return (
       <div className="hello-background">
         <div className="hello">
-          <div className="image">
+          <div className="hello-image">
             <img src={profilePicture} alt="applicant" />
           </div>
-          <h2>Hello, I am Optimistic Trousers</h2>
-          <p>
+          <h2 className="hello-greeting">HELLO, I AM OPTIMISTIC TROUSERS</h2>
+          <p className="hello-about">
             Sunt exercitation aute sit amet consequat deserunt nostrud anim
             consequat ea laborum aute. Est laboris magna consectetur esse eu
             sint minim. Culpa exercitation amet sunt ex. Deserunt fugiat mollit
