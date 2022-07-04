@@ -1,0 +1,13 @@
+.experence{
+    width: inherit;
+    background-color: white;
+}
+
+.experience>*{
+    line-height: 1.5;
+}
+
+.position{
+    display: flex;
+    justify-content: space-between;
+}
