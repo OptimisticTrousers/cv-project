@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: quantify-bold;
+    src: url(./fonts/Quantify\ Bold\ v2.6.ttf);
+}
+
+h2{
+    font-family: quantify-bold;
+}

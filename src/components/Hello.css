@@ -1,7 +1,4 @@
-@font-face {
-    font-family: quantify-bold;
-    src: url(../fonts/Quantify\ Bold\ v2.6.ttf);
-}
+
 
 .hello-background{
     background-color: white;
@@ -15,9 +12,7 @@ img{
     border-radius: 75%;
 }
 
-h2.hello-greeting{
-    font-family: quantify-bold;
-}
+
 
 .hello>*{
     line-height: 2;
