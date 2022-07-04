@@ -40,7 +40,6 @@ class CV extends React.Component {
             </div>
           </div>
           <div className="curriculum-vitae-grid">
-            <p />
           </div>
         </div>
       </div>
