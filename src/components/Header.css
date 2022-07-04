@@ -37,6 +37,7 @@ p.occupation{
     border-top: 2px solid #90e3fb;
     text-align: center;
     width: 105%;
+    color: #7deeff;
 }
 
 p.i-am{
@@ -51,4 +52,5 @@ p.i-am{
 
 h1{
     font-family: hops-and-barley;
+    color: white;
 }
