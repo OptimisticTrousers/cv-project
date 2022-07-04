@@ -26,15 +26,23 @@ div.introduction{
 }
 
 div.introduction>*{
+    line-height: 2;
     text-align: center;
+    width: max-content;
+    margin: auto;
 }
 
 p.occupation{
-    font-family: futura-light;
+    font-family: jilican-heavy;
+    border-top: 2px solid #90e3fb;
+    text-align: center;
+    width: 105%;
 }
 
 p.i-am{
     font-family: futura-light;
+    color: #78a5bd;
+    background-color: white;
 }
 
 h1{
