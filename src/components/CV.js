@@ -1,4 +1,5 @@
 import React from 'react';
+import './CV.css';
 
 class CV extends React.Component {
   render() {
@@ -6,10 +7,10 @@ class CV extends React.Component {
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
-          <div className="header">
+          <div className="head">
+            <h2>Optimistic Trousers</h2>
             <div className="overview">
-              <h2>Optimistic Trousers</h2>
-              <p>
+              <p className="overview-description">
                 Ea minim aute nulla reprehenderit dolore mollit qui veniam dolor
                 sunt incididunt fugiat Lorem. Nisi culpa magna aute dolore
                 consectetur ea aliqua eiusmod amet. Voluptate in enim ipsum amet
@@ -18,23 +19,23 @@ class CV extends React.Component {
                 exercitation sunt irure cupidatat duis. Ipsum non consectetur
                 quis reprehenderit ex.
               </p>
-            </div>
-            <div className="contact">
-              <div className="contact-item">
-                <p>Portfolio </p>
-                <a>optimistictrousers.com</a>
-              </div>
-              <div className="contact-item">
-                <p>Email</p>
-                <a>theoptimistictrouser@protonmail.com</a>
-              </div>
-              <div className="contact-item">
-                <p>Phone</p>
-                <a>555-666-7777</a>
-              </div>
-              <div className="contact-item">
-                <p>Location</p>
-                <a>Earth</a>
+              <div className="contact">
+                <div className="contact-item">
+                  <p>Portfolio </p>
+                  <a>optimistictrousers.com</a>
+                </div>
+                <div className="contact-item">
+                  <p>Email</p>
+                  <a>theoptimistictrouser@protonmail.com</a>
+                </div>
+                <div className="contact-item">
+                  <p>Phone</p>
+                  <a>555-666-7777</a>
+                </div>
+                <div className="contact-item">
+                  <p>Location</p>
+                  <a>Earth</a>
+                </div>
               </div>
             </div>
           </div>

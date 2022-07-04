@@ -1,0 +1,24 @@
+.curriculum-vitae{
+    background-color: white;
+    width: inherit;
+}
+
+.curriculum-vitae-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.head > h2{
+    text-align: start;
+}
+
+
+
+.overview{
+    display: flex;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+}
