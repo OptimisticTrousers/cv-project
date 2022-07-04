@@ -1,9 +1,9 @@
 import React from 'react';
 import './Interests.css';
-import monitor from '../images/monitor.png';
-import website from '../images/website.png';
-import contract from '../images/contract.png';
-import branding from '../images/branding.png';
+import monitor from '../../public/assets/monitor.png';
+import website from '../../public/assets/website.png';
+import contract from '../../public/assets/contract.png';
+import branding from '../../public/assets/branding.png';
 import Interest from './Interest';
 
 class Interests extends React.Component {
