@@ -4,6 +4,7 @@ import monitor from '../images/monitor.png';
 import website from '../images/website.png';
 import contract from '../images/contract.png';
 import branding from '../images/branding.png';
+import Interest from './Interest';
 
 class Interests extends React.Component {
   render() {
@@ -11,54 +12,53 @@ class Interests extends React.Component {
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
         <div className="interests-container">
-          <div className="interest">
-            <img src={monitor} alt="monitor" />
-            <h3>RESPONSIVE WEB DESIGN</h3>
-            <p>
+          <Interest
+            image={monitor}
+            title="RESPONSIVE WEB DESIGN"
+            description="Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
+              veniam consectetur quis ex occaecat pariatur dolor irure non
+              cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
+              magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
+              incididunt velit nostrud id ipsum esse aliqua pariatur labore
+              incididunt."
+          />
+          <Interest
+            image={website}
+            title="WEB DEVELOPMENT"
+            description="
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
               veniam consectetur quis ex occaecat pariatur dolor irure non
               cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
               magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
               incididunt velit nostrud id ipsum esse aliqua pariatur labore
               incididunt.
-            </p>
-          </div>
-          <div className="interest">
-            <img src={website} alt="website" />
-            <h3>WEB DEVELOPMENT</h3>
-            <p>
+          "
+          />
+          <Interest
+            image={contract}
+            title="PRINT DESIGN"
+            description="
+
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
               veniam consectetur quis ex occaecat pariatur dolor irure non
               cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
               magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
               incididunt velit nostrud id ipsum esse aliqua pariatur labore
               incididunt.
-            </p>
-          </div>
-          <div className="interest">
-            <img src={contract} alt="contract" />
-            <h3>PRINT DESIGN</h3>
-            <p>
+          "
+          />
+          <Interest
+            image={branding}
+            title="BRANDING"
+            description="
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
               veniam consectetur quis ex occaecat pariatur dolor irure non
               cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
               magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
               incididunt velit nostrud id ipsum esse aliqua pariatur labore
               incididunt.
-            </p>
-          </div>
-          <div className="interest">
-            <img src={branding} alt="branding" />
-            <h3>BRANDING</h3>
-            <p>
-              Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
-              veniam consectetur quis ex occaecat pariatur dolor irure non
-              cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
-              magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
-              incididunt velit nostrud id ipsum esse aliqua pariatur labore
-              incididunt.
-            </p>
-          </div>
+          "
+          />
         </div>
       </div>
     );
