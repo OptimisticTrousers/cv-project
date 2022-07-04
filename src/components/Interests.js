@@ -1,6 +1,7 @@
 import React from 'react';
 import './Interests.css';
 import monitor from '../images/monitor.png';
+import website from '../images/website.png';
 
 class Interests extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class Interests extends React.Component {
             </p>
           </div>
           <div className="interest">
-            <img alt="webpage" />
+            <img src={website} alt="website" />
             <h3>WEB DEVELOPMENT</h3>
             <p>
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
