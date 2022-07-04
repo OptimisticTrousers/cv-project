@@ -8,6 +8,11 @@ h2{
     text-align: center;
 }
 
+.interest > img{
+    width: 30%;
+    height: auto;
+}
+
 .interests-container{
     margin: 0 auto;
     padding: 2rem;

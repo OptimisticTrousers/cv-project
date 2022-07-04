@@ -9,6 +9,9 @@ function App() {
       <Header />
       <Hello />
       <Interests />
+      <a href="https://www.flaticon.com/free-icons/layout" title="layout icons">
+        Layout icons created by Freepik - Flaticon
+      </a>
     </div>
   );
 }

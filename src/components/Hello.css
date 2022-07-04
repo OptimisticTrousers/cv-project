@@ -8,11 +8,9 @@
     padding: 2.5rem;
 }
 
-img{
+.hello-image > img{
     border-radius: 75%;
 }
-
-
 
 .hello>*{
     line-height: 2;
