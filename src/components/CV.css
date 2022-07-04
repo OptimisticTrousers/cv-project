@@ -8,6 +8,12 @@
     margin: 0 auto;
 }
 
+.curriculum-vitae-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: auto;
+}
+
 .head > h2{
     text-align: start;
     padding-bottom: 1rem;
