@@ -3,6 +3,7 @@ import './Interests.css';
 import monitor from '../images/monitor.png';
 import website from '../images/website.png';
 import contract from '../images/contract.png';
+import branding from '../images/branding.png';
 
 class Interests extends React.Component {
   render() {
@@ -47,7 +48,7 @@ class Interests extends React.Component {
             </p>
           </div>
           <div className="interest">
-            <img alt="light-bulb" />
+            <img src={branding} alt="branding" />
             <h3>BRANDING</h3>
             <p>
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur

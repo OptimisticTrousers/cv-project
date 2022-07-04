@@ -24,6 +24,12 @@ function App() {
       >
         Document icons created by Freepik - Flaticon
       </a>
+      <a
+        href="https://www.flaticon.com/free-icons/branding"
+        title="branding icons"
+      >
+        Branding icons created by Eucalyp - Flaticon
+      </a>
     </div>
   );
 }
