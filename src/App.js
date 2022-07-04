@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Hello from './components/Hello';
 import Interests from './components/Interests';
+import CV from './components/CV';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       >
         Branding icons created by Eucalyp - Flaticon
       </a>
+      <CV />
     </div>
   );
 }
