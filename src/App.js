@@ -18,6 +18,12 @@ function App() {
       >
         Web development icons created by Eucalyp - Flaticon
       </a>
+      <a
+        href="https://www.flaticon.com/free-icons/document"
+        title="document icons"
+      >
+        Document icons created by Freepik - Flaticon
+      </a>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Interests.css';
 import monitor from '../images/monitor.png';
 import website from '../images/website.png';
+import contract from '../images/contract.png';
 
 class Interests extends React.Component {
   render() {
@@ -34,7 +35,7 @@ class Interests extends React.Component {
             </p>
           </div>
           <div className="interest">
-            <img alt="document" />
+            <img src={contract} alt="contract" />
             <h3>PRINT DESIGN</h3>
             <p>
               Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
