@@ -7,9 +7,9 @@ class Header extends React.Component {
       <div className="header">
         <div className="introduction">
           <p className="i-am">I AM</p>
-          <h1>Tom Newton</h1>
+          <h1>Optimistic Trousers</h1>
           <p className="occupation">
-            A Digital Designer based in London, England.
+            A Software Engineer based in New York City, NY.
           </p>
         </div>
       </div>
