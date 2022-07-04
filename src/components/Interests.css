@@ -1,0 +1,22 @@
+.interests{
+    background-color: #f5f5f5;
+    width: inherit;
+}
+
+h2{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.interests-container{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.interest{
+    line-height: 2;
+}

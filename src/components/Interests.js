@@ -1,11 +1,12 @@
 import React from 'react';
+import './Interests.css';
 
 class Interests extends React.Component {
   render() {
     return (
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
-        <div className="container">
+        <div className="interests-container">
           <div className="interest">
             <img alt="monitor" />
             <h3>RESPONSIVE WEB DESIGN</h3>
