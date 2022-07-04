@@ -1,11 +1,16 @@
 @font-face {
     font-family: hops-and-barley;
-    src: url(../fonts/Fontspring-DEMO-hops_and_barley_c3b.otf)
+    src: url(../fonts/Fontspring-DEMO-hops_and_barley_c3b.otf);
 }
 
 @font-face {
     font-family: futura-light;
-    src: url(../fonts/Futura\ Std\ Light.ttf)
+    src: url(../fonts/Futura\ Std\ Light.ttf);
+}
+
+@font-face {
+    font-family: jilican-heavy;
+    src: url(../fonts/Jillican\ Heavy.ttf);
 }
 
 div.header {
@@ -22,6 +27,10 @@ div.introduction{
 
 div.introduction>*{
     text-align: center;
+}
+
+p.occupation{
+    font-family: futura-light;
 }
 
 p.i-am{
