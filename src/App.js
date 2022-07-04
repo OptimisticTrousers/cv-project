@@ -10,6 +10,7 @@ function App() {
       <Header />
       <Hello />
       <Interests />
+      <CV />
       <a href="https://www.flaticon.com/free-icons/layout" title="layout icons">
         Layout icons created by Freepik - Flaticon
       </a>
@@ -31,7 +32,6 @@ function App() {
       >
         Branding icons created by Eucalyp - Flaticon
       </a>
-      <CV />
     </div>
   );
 }
