@@ -1,5 +1,6 @@
 import React from 'react';
 import './CV.css';
+import Experience from './Experience';
 
 class CV extends React.Component {
   render() {
@@ -39,10 +40,9 @@ class CV extends React.Component {
               </div>
             </div>
           </div>
-          <div className="curriculum-vitae-grid">
-            <h2>Experience</h2>
-            <h2>Skills</h2>
-          </div>
+          <div className="curriculum-vitae-grid" />
+          <Experience />
+          <Experience />
         </div>
       </div>
     );
