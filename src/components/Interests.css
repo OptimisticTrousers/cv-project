@@ -8,10 +8,6 @@ h2{
     text-align: center;
 }
 
-.interest > img{
-    width: 30%;
-    height: auto;
-}
 
 .interests-container{
     margin: 0 auto;
@@ -20,8 +16,4 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-}
-.interest{
-    margin: auto;
-    line-height: 2;
 }
