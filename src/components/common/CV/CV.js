@@ -31,19 +31,19 @@ const practicalExperiences = [
 
 const educationalExperiences = [
   {
-    school: 'Optimistic University',
-    major: 'Computer Science',
+    school: 'University name - Location',
+    major: 'Masters in Computer Science',
+    date: 'September 2019 - June 2020',
+  },
+  {
+    school: 'University name - Location',
+    major: 'B.S. Computer Science',
     date: 'September 2014 - June 2018',
   },
   {
-    school: 'Optimistic University',
-    major: 'Computer Science',
-    date: 'September 2014 - June 2018',
-  },
-  {
-    school: 'Optimistic University',
-    major: 'Computer Science',
-    date: 'September 2014 - June 2018',
+    school: 'London High School',
+    major: 'N/A',
+    date: 'September 2010 - June 2014',
   },
 ];
 
