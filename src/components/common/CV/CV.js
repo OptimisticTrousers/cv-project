@@ -100,6 +100,13 @@ class CV extends React.Component {
     };
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState({
+      submitted: true,
+    });
+  }
+
   render() {
     const { name, description, portfolio, email, phoneNumber, location } =
       profile;
@@ -109,27 +116,29 @@ class CV extends React.Component {
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
-          <Profile
-            name={name}
-            description={description}
-            portfolio={portfolio}
-            email={email}
-            phoneNumber={phoneNumber}
-            location={location}
-            submitted={submitted}
-          />
-          <div className="curriculum-vitae-grid">
-            <Experience
-              title="PRACTICAL EXPERIENCE"
-              experiences={practicalExperiences}
+          <form onSubmit={this.handleSubmit}>
+            <Profile
+              name={name}
+              description={description}
+              portfolio={portfolio}
+              email={email}
+              phoneNumber={phoneNumber}
+              location={location}
+              submitted={submitted}
             />
-            <Education educationalExperiences={educationalExperiences} />
-            <Skills skills={skills} />
-            <Qualifications qualifications={qualifications} />
-            <button type="button" className="save">
-              Click Me to Save
-            </button>
-          </div>
+            <div className="curriculum-vitae-grid">
+              <Experience
+                title="PRACTICAL EXPERIENCE"
+                experiences={practicalExperiences}
+              />
+              <Education educationalExperiences={educationalExperiences} />
+              <Skills skills={skills} />
+              <Qualifications qualifications={qualifications} />
+              <button type="submit" className="save">
+                Click Me to Save
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     );
