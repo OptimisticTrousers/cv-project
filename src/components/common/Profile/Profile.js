@@ -17,12 +17,26 @@ class Profile extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.conditionallyRender = this.conditionallyRender.bind(this);
   }
 
   handleChange(event, value) {
     this.setState({
       [value]: event.target.value,
     });
+  }
+
+  conditionallyRender(submittedComponent, value, propName, type = 'text') {
+    const { submitted } = this.props;
+    return submitted ? (
+      submittedComponent
+    ) : (
+      <Input
+        value={value}
+        handleChange={(event) => this.handleChange(event, propName)}
+        type={type}
+      />
+    );
   }
 
   render() {
