@@ -11,11 +11,16 @@
 .curriculum-vitae-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 3rem;
 }
 
 .curriculum-vitae-grid>*{
     line-height: 3;
+}
+
+.curriculum-vitae-grid>div:nth-child(1){
+    grid-row: 1 / -1;
 }
 
 .head > h2{
