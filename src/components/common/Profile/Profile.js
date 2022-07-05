@@ -31,6 +31,8 @@ class Profile extends React.Component {
 
     const { submitted } = this.props;
 
+    const { handleChange } = this;
+
     return (
       <div className="head">
         {submitted ? (
@@ -38,7 +40,7 @@ class Profile extends React.Component {
         ) : (
           <Input
             value={name}
-            handleChange={(event) => this.handleChange(event, 'name')}
+            handleChange={(event) => handleChange(event, 'name')}
           />
         )}
         <div className="overview">
@@ -51,9 +53,7 @@ class Profile extends React.Component {
               ) : (
                 <Input
                   value={portfolio}
-                  handleChange={(event) =>
-                    this.handleChange(event, 'portfolio')
-                  }
+                  handleChange={(event) => handleChange(event, 'portfolio')}
                 />
               )}
             </div>
@@ -64,7 +64,7 @@ class Profile extends React.Component {
               ) : (
                 <Input
                   value={email}
-                  handleChange={(event) => this.handleChange(event, 'email')}
+                  handleChange={(event) => handleChange(event, 'email')}
                   type="email"
                 />
               )}
@@ -76,15 +76,20 @@ class Profile extends React.Component {
               ) : (
                 <Input
                   value={phoneNumber}
-                  handleChange={(event) =>
-                    this.handleChange(event, 'phoneNumber')
-                  }
+                  handleChange={(event) => handleChange(event, 'phoneNumber')}
                 />
               )}
             </div>
             <div className="contact-item">
               <p>Location</p>
-              <a>{location}</a>
+              {submitted ? (
+                <a>{location}</a>
+              ) : (
+                <Input
+                  value={location}
+                  handleChange={(event) => handleChange(event, 'location')}
+                />
+              )}
             </div>
           </div>
         </div>
