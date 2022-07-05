@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './Qualifications.css';
 
 class Qualifications extends React.Component {
   render() {
