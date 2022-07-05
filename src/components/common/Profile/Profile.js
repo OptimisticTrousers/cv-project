@@ -71,14 +71,7 @@ class Profile extends React.Component {
             </div>
             <div className="contact-item">
               <p>Location</p>
-              {submitted ? (
-                <a>{location}</a>
-              ) : (
-                <Input
-                  value={location}
-                  handleChange={(event) => handleChange(event, 'location')}
-                />
-              )}
+              {conditionallyRender(<a>{location}</a>, location, 'location')}
             </div>
           </div>
         </div>
