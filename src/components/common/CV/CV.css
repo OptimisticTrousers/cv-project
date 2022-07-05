@@ -70,9 +70,11 @@
         grid-column: 1 / 2;
     }
     .skills{
+        text-align: center;
         grid-column: 2 / 3;
     }
     .qualifications{
+        text-align: center;
         grid-column: 3 / 4;
     }
 
@@ -81,5 +83,8 @@
 @media(max-width: 860px){
     .curriculum-vitae-container{
         font-size: 0.75rem;
+    }
+    .education{
+        text-align: center;
     }
 }
