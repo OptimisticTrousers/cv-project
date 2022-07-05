@@ -45,3 +45,41 @@
 .contact-item > a{
     align-self: center;
 }
+
+@media(max-width: 1280px){
+    .curriculum-vitae-container{
+        width: inherit;
+        padding: 0 2rem;
+    }
+
+    .overview{
+        flex-wrap: wrap;
+    }
+    .contact{
+        border-top: 3px dotted #e5e5e5;
+        width: 100%;
+    }
+
+    .curriculum-vitae-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .experience{
+        grid-column: 1 / -1;
+    }
+    .education{
+        grid-column: 1 / 2;
+    }
+    .skills{
+        grid-column: 2 / 3;
+    }
+    .qualifications{
+        grid-column: 3 / 4;
+    }
+
+}
+
+@media(max-width: 860px){
+    .curriculum-vitae-container{
+        font-size: 0.75rem;
+    }
+}
