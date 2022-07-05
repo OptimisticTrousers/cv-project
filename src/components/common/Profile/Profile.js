@@ -14,7 +14,6 @@ class Profile extends React.Component {
       email: props.email,
       phoneNumber: props.phoneNumber,
       location: props.location,
-      submitted: props.submitted,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,15 +26,10 @@ class Profile extends React.Component {
   }
 
   render() {
-    const {
-      name,
-      description,
-      portfolio,
-      email,
-      phoneNumber,
-      location,
-      submitted,
-    } = this.state;
+    const { name, description, portfolio, email, phoneNumber, location } =
+      this.state;
+
+    const { submitted } = this.props;
 
     return (
       <div className="head">
