@@ -4,11 +4,11 @@ import './Experience.css';
 
 class Experience extends React.Component {
   render() {
-    const { title, practicalExperiences } = this.props;
+    const { title, experiences } = this.props;
     return (
       <div className="experience">
         <h2>{title}</h2>
-        {practicalExperiences.map((experience) => (
+        {experiences.map((experience) => (
           <div className="experience-container">
             <div className="position">
               <h3>
