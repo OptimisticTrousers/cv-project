@@ -45,18 +45,11 @@ class Profile extends React.Component {
 
     const { submitted } = this.props;
 
-    const { handleChange } = this;
+    const { handleChange, conditionallyRender } = this;
 
     return (
       <div className="head">
-        {submitted ? (
-          <h2>{name}</h2>
-        ) : (
-          <Input
-            value={name}
-            handleChange={(event) => handleChange(event, 'name')}
-          />
-        )}
+        {conditionallyRender(<h2>{name}</h2>, name, 'name')}
         <div className="overview">
           <p className="overview-description">{description}</p>
           <div className="contact">
