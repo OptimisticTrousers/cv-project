@@ -43,15 +43,13 @@ class Profile extends React.Component {
     const { name, description, portfolio, email, phoneNumber, location } =
       this.state;
 
-    const { submitted } = this.props;
-
-    const { handleChange, conditionallyRender } = this;
+    const { conditionallyRender } = this;
 
     return (
       <div className="head">
         {conditionallyRender(<h2>{name}</h2>, name, 'name')}
         <div className="overview">
-          <p className="overview-description">{description}</p>
+          <p className="overview-description">{description}</p>,
           <div className="contact">
             <div className="contact-item">
               <p>Portfolio </p>
