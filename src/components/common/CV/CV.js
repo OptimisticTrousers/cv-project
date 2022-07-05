@@ -115,6 +115,9 @@ class CV extends React.Component {
             <Education educationalExperiences={educationalExperiences} />
             <Skills skills={skills} />
             <Qualifications qualifications={qualifications} />
+            <button type="button" className="save">
+              Click Me to Save
+            </button>
           </div>
         </div>
       </div>
