@@ -45,6 +45,8 @@ const educationalExperience = [
   },
 ];
 
+const skills = ['Development', 'Javascript', 'Leadership', 'Management'];
+
 class CV extends React.Component {
   render() {
     return (
