@@ -62,7 +62,13 @@ class Interests extends React.Component {
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
         <div className="interests-container">
-          {interests.map((interest) => interest)}
+          {interests.map((interest) => (
+            <Interest
+              image={interest.image}
+              title={interest.title}
+              description={interest.description}
+            />
+          ))}
         </div>
       </div>
     );
