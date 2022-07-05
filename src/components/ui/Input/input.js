@@ -3,9 +3,13 @@ import React from 'react';
 
 class Input extends React.Component {
   render() {
-    const { value, handleChange } = this.props;
-    return <input type="text" required onChange={handleChange} value={value} />;
+    const { value, handleChange, type } = this.props;
+    return <input type={type} required onChange={handleChange} value={value} />;
   }
 }
+
+Input.defaultProps = {
+  type: 'text',
+};
 
 export default Input;
