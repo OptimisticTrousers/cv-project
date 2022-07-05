@@ -10,7 +10,7 @@ class Experience extends React.Component {
         <h2>{title}</h2>
         {experiences.map((experience) => (
           <div className="experience-container">
-            <div className="position">
+            <div className="experience-position">
               <h3>
                 {experience.company}{' '}
                 <span>{experience.position || experience.major}</span>
