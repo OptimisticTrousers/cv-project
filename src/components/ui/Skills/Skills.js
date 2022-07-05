@@ -8,7 +8,7 @@ class Skills extends React.Component {
     return (
       <div className="skills">
         <h2 className="skills-title">SKILLS</h2>
-        <ul classNam="skills-list">
+        <ul className="skills-list">
           {skills.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
