@@ -47,7 +47,18 @@ const educationalExperiences = [
   },
 ];
 
-const skills = ['Development', 'Javascript', 'Leadership', 'Management'];
+const skills = [
+  'HTML',
+  'CSS',
+  'Javascript',
+  'React',
+  'Tailwind CSS',
+  'GraphQL',
+  'Next.js',
+  'Node.js',
+  'Express.js',
+  'MongoDB',
+];
 
 const qualifications = [
   'Won USMCD Hackathon',
