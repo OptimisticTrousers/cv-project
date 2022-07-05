@@ -71,6 +71,16 @@ class Profile extends React.Component {
             </div>
             <div className="contact-item">
               <p>Phone</p>
+              {submitted ? (
+                <a>{phoneNumber}</a>
+              ) : (
+                <Input
+                  value={phoneNumber}
+                  handleChange={(event) =>
+                    this.handleChange(event, 'phoneNumber')
+                  }
+                />
+              )}
             </div>
             <div className="contact-item">
               <p>Location</p>
