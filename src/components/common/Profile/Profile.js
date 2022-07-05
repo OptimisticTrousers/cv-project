@@ -45,11 +45,13 @@ class Profile extends React.Component {
         handleChange={(event) => this.handleChange(event, propName)}
         type={type}
       />
-    ) : (
+    ) : inputType === 'textarea' ? (
       <Textarea
         value={value}
         handleChange={(event) => this.handleChange(event, propName)}
       />
+    ) : (
+      []
     );
   }
 
@@ -63,7 +65,12 @@ class Profile extends React.Component {
       <div className="head">
         {conditionallyRender(<h2>{name}</h2>, 'input', name, 'name')}
         <div className="overview">
-          <p className="overview-description">{description}</p>,
+          {conditionallyRender(
+            <p className="overview-description">{description}</p>,
+            'textarea',
+            name,
+            'name'
+          )}
           <div className="contact">
             <div className="contact-item">
               <p>Portfolio </p>
