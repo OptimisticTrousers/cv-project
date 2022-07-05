@@ -1,16 +1,16 @@
 @font-face {
     font-family: hops-and-barley;
-    src: url(../../public/fonts/Fontspring-DEMO-hops_and_barley_c3b.otf);
+    src: url(../../../../public/fonts/Fontspring-DEMO-hops_and_barley_c3b.otf);
 }
 
 @font-face {
     font-family: futura-light;
-    src: url(../../public/fonts/Futura\ Std\ Light.ttf);
+    src: url(../../../../public/fonts/Futura\ Std\ Light.ttf);
 }
 
 @font-face {
     font-family: jilican-heavy;
-    src: url(../../public/fonts/Jillican\ Heavy.ttf);
+    src: url(../../../../public/fonts/Jillican\ Heavy.ttf);
 }
 
 div.header {

@@ -1,10 +1,10 @@
 import React from 'react';
 import './Interests.css';
-import monitor from '../assets/monitor.png';
-import website from '../assets/website.png';
-import contract from '../assets/contract.png';
-import branding from '../assets/branding.png';
-import Interest from './Interest';
+import monitor from '../../../assets/monitor.png';
+import website from '../../../assets/website.png';
+import contract from '../../../assets/contract.png';
+import branding from '../../../assets/branding.png';
+import Interest from '../../ui/Interest/Interest';
 
 class Interests extends React.Component {
   render() {

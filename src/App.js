@@ -1,7 +1,7 @@
-import Header from './components/Header';
-import Hello from './components/Hello';
-import Interests from './components/Interests';
-import CV from './components/CV';
+import Header from './components/common/Header/Header';
+import Hello from './components/common/Hello/Hello';
+import Interests from './components/common/Interests/Interests';
+import CV from './components/common/CV/CV';
 
 function App() {
   return (
