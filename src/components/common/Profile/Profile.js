@@ -3,6 +3,22 @@ import React from 'react';
 import './Profile.css';
 
 class Profile extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      value: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      value: event.target.value,
+    });
+  }
+
   render() {
     const {
       name,
@@ -13,9 +29,15 @@ class Profile extends React.Component {
       location,
       submitted,
     } = this.props;
+
+    const { value } = this.state;
     return (
       <div className="head">
-        {submitted ? <h2>{name}</h2> : <input value={name} />}
+        {submitted ? (
+          <h2>{value}</h2>
+        ) : (
+          <input onChange={this.handleChange} value={value} />
+        )}
         <div className="overview">
           <p className="overview-description">{description}</p>
           <div className="contact">

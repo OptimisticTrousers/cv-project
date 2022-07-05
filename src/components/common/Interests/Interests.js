@@ -1,5 +1,6 @@
 import React from 'react';
 import './Interests.css';
+import uniqid from 'uniqid';
 import monitor from '../../../assets/monitor.png';
 import website from '../../../assets/website.png';
 import contract from '../../../assets/contract.png';
@@ -64,6 +65,7 @@ class Interests extends React.Component {
         <div className="interests-container">
           {interests.map((interest) => (
             <Interest
+              key={uniqid()}
               image={interest.image}
               title={interest.title}
               description={interest.description}

@@ -102,9 +102,9 @@ class CV extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({
-      submitted: true,
-    });
+    this.setState((state) => ({
+      submitted: !state.submitted,
+    }));
   }
 
   render() {
