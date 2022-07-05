@@ -1,6 +1,7 @@
 .experence{
     width: inherit;
     background-color: white;
+    grid-row: 1 / -1;
 }
 
 .experience>*{
