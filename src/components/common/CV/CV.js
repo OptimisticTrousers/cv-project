@@ -99,6 +99,7 @@ class CV extends React.Component {
       submitted: false,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
   }
 
   handleSubmit(event) {
@@ -106,6 +107,12 @@ class CV extends React.Component {
     this.setState((state) => ({
       submitted: !state.submitted,
     }));
+  }
+
+  handleEdit() {
+    this.setState({
+      submitted: false,
+    });
   }
 
   render() {
@@ -137,6 +144,9 @@ class CV extends React.Component {
               <Qualifications qualifications={qualifications} />
               <button type="submit" className="save">
                 Click Me to Save
+              </button>
+              <button type="button" onClick={this.handleEdit}>
+                Edit
               </button>
             </div>
           </form>
