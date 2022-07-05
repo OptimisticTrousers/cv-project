@@ -63,13 +63,10 @@ class Profile extends React.Component {
             </div>
             <div className="contact-item">
               <p>Phone</p>
-              {submitted ? (
-                <a>{phoneNumber}</a>
-              ) : (
-                <Input
-                  value={phoneNumber}
-                  handleChange={(event) => handleChange(event, 'phoneNumber')}
-                />
+              {conditionallyRender(
+                <a>{phoneNumber}</a>,
+                phoneNumber,
+                'phoneNumber'
               )}
             </div>
             <div className="contact-item">
