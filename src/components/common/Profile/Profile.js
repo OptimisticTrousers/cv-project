@@ -4,11 +4,18 @@ import './Profile.css';
 
 class Profile extends React.Component {
   render() {
-    const { name, description, portfolio, email, phoneNumber, location } =
-      this.props;
+    const {
+      name,
+      description,
+      portfolio,
+      email,
+      phoneNumber,
+      location,
+      submitted,
+    } = this.props;
     return (
       <div className="head">
-        <h2>{name}</h2>
+        {submitted ? <h2>{name}</h2> : <input value={name} />}
         <div className="overview">
           <p className="overview-description">{description}</p>
           <div className="contact">

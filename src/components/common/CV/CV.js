@@ -92,9 +92,19 @@ const profile = {
 };
 
 class CV extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      submitted: false,
+    };
+  }
+
   render() {
     const { name, description, portfolio, email, phoneNumber, location } =
       profile;
+
+    const { submitted } = this.state;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
@@ -106,6 +116,7 @@ class CV extends React.Component {
             email={email}
             phoneNumber={phoneNumber}
             location={location}
+            submitted={submitted}
           />
           <div className="curriculum-vitae-grid">
             <Experience
