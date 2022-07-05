@@ -4,7 +4,7 @@ import Experience from '../../ui/Experience/Experience';
 import Skills from '../../ui/Skills/Skills';
 import Qualifications from '../../ui/Qualifications/Qualifications';
 
-const practicalExperience = [
+const practicalExperiences = [
   {
     company: 'OptimisticTrouser',
     position: 'Software Engineer',
@@ -93,9 +93,15 @@ class CV extends React.Component {
             </div>
           </div>
           <div className="curriculum-vitae-grid">
-            <Experience />
+            <Experience
+              title="EDUCATIONAL EXPERIENCE"
+              practicalExperiences={practicalExperiences}
+            />
             <Skills skills={skills} />
-            <Experience />
+            <Experience
+              title="PRACTICAL EXPERIENCE"
+              practicalExperiences={practicalExperiences}
+            />
             <Qualifications qualifications={qualifications} />
           </div>
         </div>

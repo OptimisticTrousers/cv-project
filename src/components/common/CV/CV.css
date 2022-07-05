@@ -14,6 +14,10 @@
     column-gap: 3rem;
 }
 
+.curriculum-vitae-grid>*{
+    line-height: 2;
+}
+
 .head > h2{
     text-align: start;
     padding-bottom: 1rem;
