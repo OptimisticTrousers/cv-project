@@ -13,6 +13,13 @@
 .hello>*{
     line-height: 2;
     text-align: center;
-    width: max(45%, 287px);
+    width: 45%;
     margin: 0 auto;
+}
+
+@media(max-width: 1000px){
+    .hello>*{
+        width: 100%;
+    }
+
 }
