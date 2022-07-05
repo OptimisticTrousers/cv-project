@@ -59,11 +59,18 @@ class Profile extends React.Component {
             </div>
             <div className="contact-item">
               <p>Email</p>
-              <a>{email}</a>
+              {submitted ? (
+                <a>{email}</a>
+              ) : (
+                <Input
+                  value={email}
+                  handleChange={(event) => this.handleChange(event, 'email')}
+                  type="email"
+                />
+              )}
             </div>
             <div className="contact-item">
               <p>Phone</p>
-              <a>{phoneNumber}</a>
             </div>
             <div className="contact-item">
               <p>Location</p>
