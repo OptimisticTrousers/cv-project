@@ -2,6 +2,7 @@ import React from 'react';
 import './CV.css';
 import Experience from '../../ui/Experience/Experience';
 import Skills from '../../ui/Skills/Skills';
+import Qualifications from '../../ui/Qualifications/Qualifications';
 
 const practicalExperience = [
   {
@@ -47,6 +48,12 @@ const educationalExperience = [
 
 const skills = ['Development', 'Javascript', 'Leadership', 'Management'];
 
+const qualifications = [
+  'Won USMCD Hackathon',
+  'Best Designer Award of 2014',
+  'Certificate of Completion for AWS',
+];
+
 class CV extends React.Component {
   render() {
     return (
@@ -89,6 +96,7 @@ class CV extends React.Component {
             <Experience />
             <Skills skills={skills} />
             <Experience />
+            <Qualifications qualifications={qualifications} />
           </div>
         </div>
       </div>
