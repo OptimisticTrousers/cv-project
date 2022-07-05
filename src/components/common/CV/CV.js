@@ -28,7 +28,7 @@ const practicalExperiences = [
   },
 ];
 
-const educationalExperience = [
+const educationalExperiences = [
   {
     school: 'Optimistic University',
     major: 'Computer Science',
@@ -95,12 +95,12 @@ class CV extends React.Component {
           <div className="curriculum-vitae-grid">
             <Experience
               title="EDUCATIONAL EXPERIENCE"
-              practicalExperiences={practicalExperiences}
+              experiences={practicalExperiences}
             />
             <Skills skills={skills} />
             <Experience
               title="PRACTICAL EXPERIENCE"
-              practicalExperiences={practicalExperiences}
+              experiences={educationalExperiences}
             />
             <Qualifications qualifications={qualifications} />
           </div>
