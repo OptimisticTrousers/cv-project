@@ -2,6 +2,7 @@
 import React from 'react';
 import './Profile.css';
 import Input from '../../ui/Input/input';
+import Textarea from '../../ui/Textarea/Textarea';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Profile extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.conditionallyRender = this.conditionallyRender.bind(this);
+    this.conditionallyRenderInput = this.conditionallyRenderInput.bind(this);
   }
 
   handleChange(event, value) {
@@ -26,7 +27,7 @@ class Profile extends React.Component {
     });
   }
 
-  conditionallyRender(submittedComponent, value, propName, type = 'text') {
+  conditionallyRenderInput(submittedComponent, value, propName, type = 'text') {
     const { submitted } = this.props;
     return submitted ? (
       submittedComponent
@@ -43,25 +44,34 @@ class Profile extends React.Component {
     const { name, description, portfolio, email, phoneNumber, location } =
       this.state;
 
-    const { conditionallyRender } = this;
+    const { conditionallyRenderInput } = this;
 
     return (
       <div className="head">
-        {conditionallyRender(<h2>{name}</h2>, name, 'name')}
+        {conditionallyRenderInput(<h2>{name}</h2>, name, 'name')}
         <div className="overview">
           <p className="overview-description">{description}</p>,
           <div className="contact">
             <div className="contact-item">
               <p>Portfolio </p>
-              {conditionallyRender(<a>{portfolio}</a>, portfolio, 'portfolio')}
+              {conditionallyRenderInput(
+                <a>{portfolio}</a>,
+                portfolio,
+                'portfolio'
+              )}
             </div>
             <div className="contact-item">
               <p>Email</p>
-              {conditionallyRender(<a>{email}</a>, email, 'email', 'email')}
+              {conditionallyRenderInput(
+                <a>{email}</a>,
+                email,
+                'email',
+                'email'
+              )}
             </div>
             <div className="contact-item">
               <p>Phone</p>
-              {conditionallyRender(
+              {conditionallyRenderInput(
                 <a>{phoneNumber}</a>,
                 phoneNumber,
                 'phoneNumber'
@@ -69,7 +79,11 @@ class Profile extends React.Component {
             </div>
             <div className="contact-item">
               <p>Location</p>
-              {conditionallyRender(<a>{location}</a>, location, 'location')}
+              {conditionallyRenderInput(
+                <a>{location}</a>,
+                location,
+                'location'
+              )}
             </div>
           </div>
         </div>
