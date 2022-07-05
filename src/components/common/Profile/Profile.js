@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Profile.css';
@@ -27,6 +28,26 @@ class Profile extends React.Component {
     });
   }
 
+  conditionallyRender(...args) {
+    const { submitted } = this.props;
+
+    const { submittedComponent, inputType, value, propName } = args;
+    return submitted ? (
+      submittedComponent
+    ) : inputType === 'input' ? (
+      <Input
+        value={value}
+        handleChange={(event) => this.handleChange(event, propName)}
+        type={args.type}
+      />
+    ) : (
+      <Textarea
+        value={value}
+        handleChange={(event) => this.handleChange(event, propName)}
+      />
+    );
+  }
+
   conditionallyRenderInput(submittedComponent, value, propName, type = 'text') {
     const { submitted } = this.props;
     return submitted ? (
@@ -38,6 +59,11 @@ class Profile extends React.Component {
         type={type}
       />
     );
+  }
+
+  conditionallyRenderTextArea(submittedComponent, value, propName) {
+    const { submitted } = this.props;
+    return submitted ? submittedComponent : <Textarea value={value} />;
   }
 
   render() {
