@@ -2,6 +2,7 @@ import Header from './components/common/Header/Header';
 import Hello from './components/common/Hello/Hello';
 import Interests from './components/common/Interests/Interests';
 import CV from './components/common/CV/CV';
+import Footer from './components/common/Footer/Footer';
 
 function App() {
   return (
@@ -10,27 +11,7 @@ function App() {
       <Hello />
       <Interests />
       <CV />
-      <a href="https://www.flaticon.com/free-icons/layout" title="layout icons">
-        Layout icons created by Freepik - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/web-development"
-        title="web development icons"
-      >
-        Web development icons created by Eucalyp - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/document"
-        title="document icons"
-      >
-        Document icons created by Freepik - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/branding"
-        title="branding icons"
-      >
-        Branding icons created by Eucalyp - Flaticon
-      </a>
+      <Footer />
     </div>
   );
 }
