@@ -87,7 +87,7 @@ class CV extends React.Component {
           </div>
           <div className="curriculum-vitae-grid">
             <Experience />
-            <Skills />
+            <Skills skills={skills} />
             <Experience />
           </div>
         </div>
