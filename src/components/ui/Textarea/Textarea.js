@@ -4,8 +4,12 @@ import './Textarea.css';
 
 class Textarea extends React.Component {
   render() {
-    const { description } = this.props;
-    return <textarea>{description}</textarea>;
+    const { value, handleChange } = this.props;
+    return (
+      <textarea required onChange={handleChange}>
+        {value}
+      </textarea>
+    );
   }
 }
 

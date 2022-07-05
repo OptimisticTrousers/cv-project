@@ -68,8 +68,8 @@ class Profile extends React.Component {
           {conditionallyRender(
             <p className="overview-description">{description}</p>,
             'textarea',
-            name,
-            'name'
+            description,
+            'description'
           )}
           <div className="contact">
             <div className="contact-item">
