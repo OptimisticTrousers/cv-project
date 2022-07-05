@@ -9,12 +9,14 @@ class Education extends React.Component {
         <h2>EDUCATION</h2>
         {educationalExperiences.map((experience) => (
           <div className="education-section">
-            <strong>B.S Computer Science</strong>
-            <p>University</p>
-            <p>Date</p>
+            <strong>{experience.major}</strong>
+            <p>{experience.school}</p>
+            <p>{experience.date}</p>
           </div>
         ))}
       </div>
     );
   }
 }
+
+export default Education;

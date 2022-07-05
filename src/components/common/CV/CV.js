@@ -3,6 +3,7 @@ import './CV.css';
 import Experience from '../../ui/Experience/Experience';
 import Skills from '../../ui/Skills/Skills';
 import Qualifications from '../../ui/Qualifications/Qualifications';
+import Education from '../../ui/Education/Education';
 
 const practicalExperiences = [
   {
@@ -97,6 +98,7 @@ class CV extends React.Component {
               title="PRACTICAL EXPERIENCE"
               experiences={practicalExperiences}
             />
+            <Education educationalExperiences={educationalExperiences} />
             <Skills skills={skills} />
             <Qualifications qualifications={qualifications} />
           </div>
