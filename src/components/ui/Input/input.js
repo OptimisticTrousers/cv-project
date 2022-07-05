@@ -7,3 +7,5 @@ class Input extends React.Component {
     return <input required onChange={handleChange} value={value} />;
   }
 }
+
+export default Input;

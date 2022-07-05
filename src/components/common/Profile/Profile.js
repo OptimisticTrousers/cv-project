@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Profile.css';
+import Input from '../../ui/Input/input';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ class Profile extends React.Component {
         {submitted ? (
           <h2>{value}</h2>
         ) : (
-          <input onChange={this.handleChange} value={value} />
+          <Input value={value} handleChange={this.handleChange} />
         )}
         <div className="overview">
           <p className="overview-description">{description}</p>
