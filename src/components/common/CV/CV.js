@@ -3,6 +3,48 @@ import './CV.css';
 import Experience from '../../ui/Experience/Experience';
 import Skills from '../../ui/Skills/Skills';
 
+const practicalExperience = [
+  {
+    company: 'OptimisticTrouser',
+    position: 'Software Engineer',
+    description:
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
+    date: 'December 2021 - Present',
+  },
+  {
+    company: 'OptimisticTrouser',
+    position: 'Software Engineer',
+    description:
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
+    date: 'December 2021 - Present',
+  },
+  {
+    company: 'OptimisticTrouser',
+    position: 'Software Engineer',
+    description:
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
+    date: 'December 2021 - Present',
+  },
+];
+
+const educationalExperience = [
+  {
+    school: 'Optimistic University',
+    major: 'Computer Science',
+    date: 'Dec 2015 - June 2019',
+  },
+  {
+    school: 'Optimistic University',
+    major: 'Computer Science',
+    date: 'Dec 2015 - June 2019',
+  },
+  {
+    school: 'Optimistic University',
+    major: 'Computer Science',
+    date: 'Dec 2015 - June 2019',
+  },
+];
+
 class CV extends React.Component {
   render() {
     return (
