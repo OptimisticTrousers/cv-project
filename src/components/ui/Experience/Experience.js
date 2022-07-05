@@ -12,7 +12,8 @@ class Experience extends React.Component {
           <div className="experience-container">
             <div className="position">
               <h3>
-                {experience.company} <span>{experience.position}</span>
+                {experience.company}{' '}
+                <span>{experience.position || experience.major}</span>
               </h3>
               <p>{experience.date}</p>
             </div>
