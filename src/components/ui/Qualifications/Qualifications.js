@@ -7,7 +7,7 @@ class Qualifications extends React.Component {
     const { qualifications } = this.props;
     return (
       <div className="qualifications">
-        <h2>Qualifications</h2>
+        <h2>QUALIFICATIONS</h2>
         {qualifications.map((qualification, index) => (
           <p key={index}>{qualification}</p>
         ))}
