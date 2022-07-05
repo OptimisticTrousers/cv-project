@@ -98,6 +98,7 @@ class CV extends React.Component {
     this.state = {
       submitted: false,
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(event) {
