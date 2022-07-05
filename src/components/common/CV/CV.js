@@ -1,6 +1,6 @@
 import React from 'react';
 import './CV.css';
-import Experience from './Experience';
+import Experience from '../../ui/Experience/Experience';
 
 class CV extends React.Component {
   render() {

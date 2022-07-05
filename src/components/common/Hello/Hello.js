@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hello.css';
-import profilePicture from '../assets/optimistictrousers.jpg';
+import profilePicture from '../../../assets/optimistictrousers.jpg';
 
 class Hello extends React.Component {
   render() {
