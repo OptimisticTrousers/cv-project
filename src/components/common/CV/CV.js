@@ -28,6 +28,20 @@ const practicalExperiences = [
       'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
     date: 'January 2018 - July 2019',
   },
+  {
+    company: 'OptimisticTrouser',
+    position: 'Junior Developer',
+    description:
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
+    date: 'January 2018 - July 2019',
+  },
+  {
+    company: 'OptimisticTrouser',
+    position: 'Junior Developer',
+    description:
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
+    date: 'January 2018 - July 2019',
+  },
 ];
 
 const educationalExperiences = [
@@ -67,13 +81,32 @@ const qualifications = [
   'Certificate of Completion for AWS',
 ];
 
+const profile = {
+  name: 'OptimisticTrousers',
+  description:
+    'Ea minim aute nulla reprehenderit dolore mollit qui veniam dolor sunt incididunt fugiat Lorem. Nisi culpa magna aute dolore consectetur ea aliqua eiusmod amet. Voluptate in enim ipsum amet id enim. Eiusmod mollit est pariatur ut do id occaecat aliqua aliqua. Culpa et est pariatur nostrud. Aliquip sint et exercitation sunt irure cupidatat duis. Ipsum non consectetur quis reprehenderit ex.',
+  portfolio: 'optimistictrousers.com',
+  email: 'theoptimistictrouser@protonmail.com',
+  phoneNumber: '555-666-7777',
+  location: 'Earth',
+};
+
 class CV extends React.Component {
   render() {
+    const { name, description, portfolio, email, phoneNumber, location } =
+      profile;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
-          <Profile />
+          <Profile
+            name={name}
+            description={description}
+            portfolio={portfolio}
+            email={email}
+            phoneNumber={phoneNumber}
+            location={location}
+          />
           <div className="curriculum-vitae-grid">
             <Experience
               title="PRACTICAL EXPERIENCE"
