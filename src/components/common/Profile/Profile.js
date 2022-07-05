@@ -8,15 +8,21 @@ class Profile extends React.Component {
     super(props);
 
     this.state = {
-      value: '',
+      name: props.name,
+      description: props.description,
+      portfolio: props.portfolio,
+      email: props.email,
+      phoneNumber: props.phoneNumber,
+      location: props.location,
+      submitted: props.submitted,
     };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange(event, value) {
     this.setState({
-      value: event.target.value,
+      [value]: event.target.value,
     });
   }
 
@@ -29,22 +35,33 @@ class Profile extends React.Component {
       phoneNumber,
       location,
       submitted,
-    } = this.props;
+    } = this.state;
 
-    const { value } = this.state;
     return (
       <div className="head">
         {submitted ? (
-          <h2>{value}</h2>
+          <h2>{name}</h2>
         ) : (
-          <Input value={value} handleChange={this.handleChange} />
+          <Input
+            value={name}
+            handleChange={(event) => this.handleChange(event, 'name')}
+          />
         )}
         <div className="overview">
           <p className="overview-description">{description}</p>
           <div className="contact">
             <div className="contact-item">
               <p>Portfolio </p>
-              <a>{portfolio}</a>
+              {submitted ? (
+                <a>{portfolio}</a>
+              ) : (
+                <Input
+                  value={portfolio}
+                  handleChange={(event) =>
+                    this.handleChange(event, 'portfolio')
+                  }
+                />
+              )}
             </div>
             <div className="contact-item">
               <p>Email</p>

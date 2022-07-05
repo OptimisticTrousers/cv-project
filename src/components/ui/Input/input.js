@@ -4,7 +4,7 @@ import React from 'react';
 class Input extends React.Component {
   render() {
     const { value, handleChange } = this.props;
-    return <input required onChange={handleChange} value={value} />;
+    return <input type="text" required onChange={handleChange} value={value} />;
   }
 }
 
