@@ -7,25 +7,25 @@ import Education from '../../ui/Education/Education';
 
 const practicalExperiences = [
   {
-    company: 'OptimisticTrouser',
-    position: 'Software Engineer',
+    company: 'Cloud.com',
+    position: 'Senior Software Engineer',
     description:
-      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
     date: 'December 2021 - Present',
   },
   {
     company: 'OptimisticTrouser',
-    position: 'Software Engineer',
+    position: 'Web Developer',
     description:
-      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
-    date: 'December 2021 - Present',
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
+    date: 'July 2019 - November 2021',
   },
   {
     company: 'OptimisticTrouser',
-    position: 'Software Engineer',
+    position: 'Junior Developer',
     description:
-      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.',
-    date: 'December 2021 - Present',
+      'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
+    date: 'January 2018 - July 2019',
   },
 ];
 
@@ -33,17 +33,17 @@ const educationalExperiences = [
   {
     school: 'Optimistic University',
     major: 'Computer Science',
-    date: 'Dec 2015 - June 2019',
+    date: 'September 2014 - June 2018',
   },
   {
     school: 'Optimistic University',
     major: 'Computer Science',
-    date: 'Dec 2015 - June 2019',
+    date: 'September 2014 - June 2018',
   },
   {
     school: 'Optimistic University',
     major: 'Computer Science',
-    date: 'Dec 2015 - June 2019',
+    date: 'September 2014 - June 2018',
   },
 ];
 

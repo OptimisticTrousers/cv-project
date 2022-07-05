@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './Education.css';
 
 class Education extends React.Component {
   render() {

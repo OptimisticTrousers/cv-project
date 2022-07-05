@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './Skills.css';
 
 class Skills extends React.Component {
   render() {
