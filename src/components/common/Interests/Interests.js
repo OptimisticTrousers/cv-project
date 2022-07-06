@@ -46,6 +46,7 @@ class Interests extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.onImageChange = this.onImageChange.bind(this);
   }
 
   handleChange(event, value, index) {
@@ -75,7 +76,7 @@ class Interests extends React.Component {
   render() {
     const { interests } = this.state;
     const { conditionallyRender } = this.props;
-    const { handleChange } = this;
+    const { handleChange, onImageChange } = this;
     return (
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
@@ -89,6 +90,7 @@ class Interests extends React.Component {
               handleChange={handleChange}
               conditionallyRender={conditionallyRender}
               index={index}
+              onImageChange={onImageChange}
             />
           ))}
         </div>
