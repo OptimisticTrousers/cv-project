@@ -18,52 +18,28 @@ class Interests extends React.Component {
           id: uniqid(),
           image: monitor,
           title: 'RESPONSIVE WEB DESIGN',
-          description: `
-    Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
-    veniam consectetur quis ex occaecat pariatur dolor irure non
-    cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
-    magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
-    incididunt velit nostrud id ipsum esse aliqua pariatur labore
-    incididunt.
+          description: `Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur veniam consectetur quis ex occaecat pariatur dolor irure non cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex magna id est labore eiusmod ad laborum. Laboris ea culpa cillum incididunt velit nostrud id ipsum esse aliqua pariatur labore incididunt.
     `,
         },
         {
           id: uniqid(),
           image: website,
           title: 'WEB DEVELOPMENT',
-          description: `
-    Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
-    veniam consectetur quis ex occaecat pariatur dolor irure non
-    cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
-    magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
-    incididunt velit nostrud id ipsum esse aliqua pariatur labore
-    incididunt.
+          description: `Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur veniam consectetur quis ex occaecat pariatur dolor irure non cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex magna id est labore eiusmod ad laborum. Laboris ea culpa cillum incididunt velit nostrud id ipsum esse aliqua pariatur labore incididunt.
     `,
         },
         {
           id: uniqid(),
           image: contract,
           title: 'PRINT DESIGN',
-          description: `
-    Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
-    veniam consectetur quis ex occaecat pariatur dolor irure non
-    cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
-    magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
-    incididunt velit nostrud id ipsum esse aliqua pariatur labore
-    incididunt.
+          description: `Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur veniam consectetur quis ex occaecat pariatur dolor irure non cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex magna id est labore eiusmod ad laborum. Laboris ea culpa cillum incididunt velit nostrud id ipsum esse aliqua pariatur labore incididunt.
     `,
         },
         {
           id: uniqid(),
           image: branding,
           title: 'BRANDING',
-          description: `
-    Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur
-    veniam consectetur quis ex occaecat pariatur dolor irure non
-    cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex
-    magna id est labore eiusmod ad laborum. Laboris ea culpa cillum
-    incididunt velit nostrud id ipsum esse aliqua pariatur labore
-    incididunt.
+          description: `Sunt proident mollit qui ullamco. Nisi cillum consectetur pariatur veniam consectetur quis ex occaecat pariatur dolor irure non cillum. Incididunt elit elit laboris aliqua eiusmod excepteur ex magna id est labore eiusmod ad laborum. Laboris ea culpa cillum incididunt velit nostrud id ipsum esse aliqua pariatur labore incididunt.
     `,
         },
       ],
