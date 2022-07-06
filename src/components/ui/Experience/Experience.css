@@ -12,3 +12,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+span{
+    color: #00a4e7;
+}

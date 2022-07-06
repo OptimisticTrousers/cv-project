@@ -13,8 +13,7 @@ class Experience extends React.Component {
           <div key={uniqid()} className="experience-container">
             <div className="experience-position">
               <h3>
-                {experience.company}{' '}
-                <span>{experience.position || experience.major}</span>
+                {experience.company} <span>{experience.position}</span>
               </h3>
               <p>{experience.date}</p>
             </div>
