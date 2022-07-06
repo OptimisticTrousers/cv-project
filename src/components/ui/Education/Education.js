@@ -30,7 +30,7 @@ class Education extends React.Component {
         {
           id: uniqid(),
           school: 'London High School',
-          major: 'N/A',
+          major: 'High School Diploma',
           dateFrom: '2010-09-06',
           dateTo: '2014-06-21',
         },
