@@ -39,6 +39,7 @@ class App extends React.Component {
     value,
     propName,
     handleChange,
+    index = undefined,
     type = 'text'
   ) {
     const { submitted } = this.state;
@@ -48,13 +49,13 @@ class App extends React.Component {
     ) : inputType === 'input' ? (
       <Input
         value={value}
-        handleChange={(event) => handleChange(event, propName)}
+        handleChange={(event) => handleChange(event, propName, index)}
         type={type}
       />
     ) : inputType === 'textarea' ? (
       <Textarea
         value={value}
-        handleChange={(event) => handleChange(event, propName)}
+        handleChange={(event) => handleChange(event, propName, index)}
       />
     ) : (
       []
