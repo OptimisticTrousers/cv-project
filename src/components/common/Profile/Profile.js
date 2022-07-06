@@ -32,7 +32,7 @@ class Profile extends React.Component {
     const { name, description, portfolio, email, phoneNumber, location } =
       this.state;
 
-    const { conditionallyRender, submitted } = this.props;
+    const { conditionallyRender } = this.props;
 
     return (
       <div className="head">
