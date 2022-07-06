@@ -10,39 +10,49 @@ class Experience extends React.Component {
     this.state = {
       practicalExperiences: [
         {
+          id: uniqid(),
           company: 'Cloud.com',
           position: 'Senior Software Engineer',
           description:
             'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
-          date: 'December 2021 - Present',
+          dateFrom: '2021-12-06',
+          dateTo: new Date().toDateInputValue(),
         },
         {
+          id: uniqid(),
           company: 'OptimisticTrouser',
           position: 'Web Developer',
           description:
             'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
-          date: 'July 2019 - November 2021',
+          dateFrom: '2019-07-16',
+          dateTo: '2021-11-25',
         },
         {
+          id: uniqid(),
           company: 'OptimisticTrouser',
           position: 'Junior Developer',
           description:
             'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
-          date: 'January 2018 - July 2019',
+          dateFrom: '2018-01-28',
+          dateTo: '2019-07-12',
         },
         {
+          id: uniqid(),
           company: 'OptimisticTrouser',
           position: 'Junior Developer',
           description:
             'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
-          date: 'January 2018 - July 2019',
+          dateFrom: '2018-01-28',
+          dateTo: '2019-07-12',
         },
         {
+          id: uniqid(),
           company: 'OptimisticTrouser',
           position: 'Junior Developer',
           description:
             'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
-          date: 'January 2018 - July 2019',
+          dateFrom: '2018-01-28',
+          dateTo: '2019-07-12',
         },
       ],
     };
@@ -66,8 +76,8 @@ class Experience extends React.Component {
   addPracticalExperience() {
     const defaultEducation = {
       id: uniqid(),
-      school: 'New School',
-      major: 'New Major',
+      company: 'New Company',
+      position: 'New Position',
       dateFrom: new Date().toDateInputValue(),
       dateTo: new Date().toDateInputValue(),
     };
