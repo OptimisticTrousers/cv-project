@@ -16,6 +16,13 @@ class App extends React.Component {
       submitted: false,
     };
     this.conditionallyRender = this.conditionallyRender.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event, value) {
+    this.setState({
+      [value]: event.target.value,
+    });
   }
 
   conditionallyRender(

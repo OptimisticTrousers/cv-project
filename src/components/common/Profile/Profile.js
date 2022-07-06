@@ -18,14 +18,6 @@ class Profile extends React.Component {
       phoneNumber: props.phoneNumber,
       location: props.location,
     };
-
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event, value) {
-    this.setState({
-      [value]: event.target.value,
-    });
   }
 
   render() {
