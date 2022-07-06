@@ -82,10 +82,7 @@ class Experience extends React.Component {
       dateTo: new Date().toDateInputValue(),
     };
     this.setState((state) => ({
-      educationalExperiences: [
-        ...state.educationalExperiences,
-        defaultEducation,
-      ],
+      practicalExperiences: [...state.practicalExperiences, defaultEducation],
     }));
   }
 
