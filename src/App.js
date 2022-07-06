@@ -22,7 +22,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      submitted: false,
+      submitted: true,
     };
     this.conditionallyRender = this.conditionallyRender.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
