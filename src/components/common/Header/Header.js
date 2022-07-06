@@ -28,20 +28,22 @@ class Header extends React.Component {
       <div className="header">
         <div className="introduction">
           <p className="i-am">I AM</p>
-          {conditionallyRender(
-            <h1>{name}</h1>,
-            'input',
-            name,
-            'name',
-            handleChange
-          )}
-          {conditionallyRender(
-            <p className="occupation">{occupancy}</p>,
-            'input',
-            occupancy,
-            'occupancy',
-            handleChange
-          )}
+          <div className="inputs">
+            {conditionallyRender(
+              <h1>{name}</h1>,
+              'input',
+              name,
+              'name',
+              handleChange
+            )}
+            {conditionallyRender(
+              <p className="occupation">{occupancy}</p>,
+              'input',
+              occupancy,
+              'occupancy',
+              handleChange
+            )}
+          </div>
         </div>
       </div>
     );

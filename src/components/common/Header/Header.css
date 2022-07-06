@@ -28,8 +28,8 @@ div.introduction{
 div.introduction>*{
     line-height: 2;
     text-align: center;
-    width: max-content;
-    margin: auto;
+    width: 99%;
+    margin: 0 auto;
 }
 
 
