@@ -15,8 +15,18 @@
     column-gap: 3rem;
 }
 
-.curriculum-vitae-grid>*{
+.curriculum-vitae-grid>.experience{
     line-height: 3;
+}
+
+.curriculum-vitae-grid>.skills{
+    line-height: 2;
+}
+.curriculum-vitae-grid>.education{
+    line-height: 2;
+}
+.curriculum-vitae-grid>.qualifications{
+    line-height: 2;
 }
 
 .curriculum-vitae-grid>div:nth-child(1){
