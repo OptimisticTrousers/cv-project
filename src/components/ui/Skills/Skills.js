@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Skills.css';
+import uniqid from 'uniqid';
+import Button from '../Button/Button';
 
 class Skills extends React.Component {
   constructor(props) {
@@ -8,29 +10,44 @@ class Skills extends React.Component {
 
     this.state = {
       skills: [
-        'HTML',
-        'CSS',
-        'Javascript',
-        'React',
-        'Tailwind CSS',
-        'GraphQL',
-        'Next.js',
-        'Node.js',
-        'Express.js',
-        'MongoDB',
+        { skill: 'HTML', id: uniqid() },
+        { skill: 'CSS', id: uniqid() },
+        { skill: 'Javascript', id: uniqid() },
+        { skill: 'React', id: uniqid() },
+        { skill: 'Tailwind CSS', id: uniqid() },
+        { skill: 'GraphQL', id: uniqid() },
+        { skill: 'Next.js', id: uniqid() },
+        { skill: 'Node.js', id: uniqid() },
+        { skill: 'Express.js', id: uniqid() },
+        { skill: 'MongoDB', id: uniqid() },
       ],
     };
+
+    this.deleteSkill = this.deleteSkill.bind(this);
+  }
+
+  deleteSkill(id) {
+    this.setState((state) => ({
+      skills: state.skills.filter((element) => element.id !== id),
+    }));
   }
 
   render() {
     const { conditionallyRender } = this.props;
     const { skills } = this.state;
+    const { deleteSkill } = this;
     return (
       <div className="skills">
         <h2 className="skills-title">SKILLS</h2>
         <ul className="skills-list">
-          {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
+          {skills.map((skill) => (
+            <div key={skill.id}>
+              <li>{skill.skill}</li>
+              <Button
+                handleClick={() => deleteSkill(skill.id)}
+                textContent="Delete Skill"
+              />
+            </div>
           ))}
         </ul>
       </div>
