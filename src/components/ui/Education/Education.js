@@ -64,8 +64,23 @@ class Education extends React.Component {
               handleChange,
               index
             )}
-            <p>{experience.school}</p>
-            <p>{experience.date}</p>
+            {conditionallyRender(
+              <p>{educationalExperiences[index].school}</p>,
+              'input',
+              educationalExperiences[index].school,
+              'school',
+              handleChange,
+              index
+            )}
+            {conditionallyRender(
+              <p>{educationalExperiences[index].date}</p>,
+              'input',
+              educationalExperiences[index].date,
+              'date',
+              handleChange,
+              index,
+              'date'
+            )}
           </div>
         ))}
       </div>
