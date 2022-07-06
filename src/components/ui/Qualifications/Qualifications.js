@@ -51,8 +51,8 @@ class Qualifications extends React.Component {
 
   render() {
     const { qualifications } = this.state;
-    const { submitted } = this.props;
-    const { deleteQualification, addQualification } = this;
+    const { conditionallyRender, submitted } = this.props;
+    const { deleteQualification, addQualification, handleChange } = this;
     return (
       <div className="qualifications">
         <h2>QUALIFICATIONS</h2>
@@ -63,7 +63,14 @@ class Qualifications extends React.Component {
         />
         {qualifications.map((qualification, index) => (
           <div>
-            <p key={qualification.id}>{qualification.qualification}</p>
+            {conditionallyRender(
+              <p key={qualification.id}>{qualification.qualification}</p>,
+              'input',
+              qualification.qualification,
+              'qualification',
+              handleChange,
+              index
+            )}
             <Button
               handleClick={() => deleteQualification(qualification.id)}
               textContent="Delete Qualification"
