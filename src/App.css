@@ -1,0 +1,29 @@
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: 0 auto;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.buttons > button{
+    width: max-content;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: #00a4e7;
+    border: 0;
+    border-radius: 20%;
+}
+.buttons > button:hover{
+    transition: all ease-in-out 0.2s;
+    background-color: #78a5bd;
+    color: black;
+    cursor: pointer;
+}
+
+@media(max-width: 1280px){
+    .buttons{
+        width: 90%;
+    }
+}

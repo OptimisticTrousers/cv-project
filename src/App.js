@@ -7,6 +7,7 @@ import CV from './components/common/CV/CV';
 import Footer from './components/common/Footer/Footer';
 import Input from './components/ui/Input/input';
 import Textarea from './components/ui/Textarea/Textarea';
+import './App.css';
 /* eslint-disable no-nested-ternary */
 
 // Setting today's date as default value for when user creates date https://stackoverflow.com/questions/6982692/how-to-set-input-type-dates-default-value-to-today
@@ -81,13 +82,15 @@ class App extends React.Component {
           <Header conditionallyRender={conditionallyRender} />
           <Hello conditionallyRender={conditionallyRender} />
           <Interests conditionallyRender={conditionallyRender} />
+          <div className="buttons">
+            <button type="submit" className="save">
+              Click Me to Save
+            </button>
+            <button type="button" onClick={handleEdit}>
+              Edit
+            </button>
+          </div>
           <CV conditionallyRender={conditionallyRender} submitted={submitted} />
-          <button type="submit" className="save">
-            Click Me to Save
-          </button>
-          <button type="button" onClick={handleEdit}>
-            Edit
-          </button>
           <Footer />
         </form>
       </div>
