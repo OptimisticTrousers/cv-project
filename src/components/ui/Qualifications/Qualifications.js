@@ -56,6 +56,11 @@ class Qualifications extends React.Component {
     return (
       <div className="qualifications">
         <h2>QUALIFICATIONS</h2>
+        <Button
+          handleClick={() => addQualification()}
+          textContent="Add Qualification"
+          submitted={submitted}
+        />
         {qualifications.map((qualification, index) => (
           <div>
             <p key={qualification.id}>{qualification.qualification}</p>
