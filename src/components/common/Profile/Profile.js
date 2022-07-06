@@ -16,6 +16,14 @@ class Profile extends React.Component {
       phoneNumber: props.phoneNumber,
       location: props.location,
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event, value) {
+    this.setState({
+      [value]: event.target.value,
+    });
   }
 
   render() {
@@ -24,15 +32,24 @@ class Profile extends React.Component {
 
     const { conditionallyRender } = this.props;
 
+    const { handleChange } = this;
+
     return (
       <div className="head">
-        {conditionallyRender(<h2>{name}</h2>, 'input', name, 'name')}
+        {conditionallyRender(
+          <h2>{name}</h2>,
+          'input',
+          name,
+          'name',
+          handleChange
+        )}
         <div className="overview">
           {conditionallyRender(
             <p className="overview-description">{description}</p>,
             'textarea',
             description,
-            'description'
+            'description',
+            handleChange
           )}
           <div className="contact">
             <div className="contact-item">
@@ -41,7 +58,8 @@ class Profile extends React.Component {
                 <a>{portfolio}</a>,
                 'input',
                 portfolio,
-                'portfolio'
+                'portfolio',
+                handleChange
               )}
             </div>
             <div className="contact-item">
@@ -51,6 +69,7 @@ class Profile extends React.Component {
                 'input',
                 email,
                 'email',
+                handleChange,
                 'email'
               )}
             </div>
@@ -60,7 +79,8 @@ class Profile extends React.Component {
                 <a>{phoneNumber}</a>,
                 'input',
                 phoneNumber,
-                'phoneNumber'
+                'phoneNumber',
+                handleChange
               )}
             </div>
             <div className="contact-item">
@@ -69,7 +89,8 @@ class Profile extends React.Component {
                 <a>{location}</a>,
                 'input',
                 location,
-                'location'
+                'location',
+                handleChange
               )}
             </div>
           </div>

@@ -33,17 +33,12 @@ class App extends React.Component {
     });
   }
 
-  handleChange(event, value) {
-    this.setState({
-      [value]: event.target.value,
-    });
-  }
-
   conditionallyRender(
     submittedComponent,
     inputType,
     value,
     propName,
+    handleChange,
     type = 'text'
   ) {
     const { submitted } = this.state;
@@ -53,13 +48,13 @@ class App extends React.Component {
     ) : inputType === 'input' ? (
       <Input
         value={value}
-        handleChange={(event) => this.handleChange(event, propName)}
+        handleChange={(event) => handleChange(event, propName)}
         type={type}
       />
     ) : inputType === 'textarea' ? (
       <Textarea
         value={value}
-        handleChange={(event) => this.handleChange(event, propName)}
+        handleChange={(event) => handleChange(event, propName)}
       />
     ) : (
       []
@@ -82,7 +77,7 @@ class App extends React.Component {
           <button type="submit" className="save">
             Click Me to Save
           </button>
-          <button type="button" onClick={this.handleEdit}>
+          <button type="button" onClick={handleEdit}>
             Edit
           </button>
           <Footer />
