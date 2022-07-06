@@ -24,6 +24,17 @@ class Skills extends React.Component {
     };
 
     this.deleteSkill = this.deleteSkill.bind(this);
+    this.addSkill = this.addSkill.bind(this);
+  }
+
+  addSkill() {
+    const defaultEducation = {
+      skill: 'New Skill',
+      id: uniqid(),
+    };
+    this.setState((state) => ({
+      skills: [...state.skills, defaultEducation],
+    }));
   }
 
   deleteSkill(id) {
