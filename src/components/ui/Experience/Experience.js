@@ -46,6 +46,45 @@ class Experience extends React.Component {
         },
       ],
     };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.addPracticalExperience = this.addPracticalExperience.bind(this);
+    this.deletePracticalExperience = this.deletePracticalExperience.bind(this);
+  }
+
+  handleChange(event, value, index) {
+    this.setState((state) => {
+      const { educationalExperiences } = state;
+      const educationalExperience = educationalExperiences[index];
+      educationalExperience[value] = event.target.value;
+      return {
+        educationalExperiences,
+      };
+    });
+  }
+
+  addPracticalExperience() {
+    const defaultEducation = {
+      id: uniqid(),
+      school: 'New School',
+      major: 'New Major',
+      dateFrom: new Date().toDateInputValue(),
+      dateTo: new Date().toDateInputValue(),
+    };
+    this.setState((state) => ({
+      educationalExperiences: [
+        ...state.educationalExperiences,
+        defaultEducation,
+      ],
+    }));
+  }
+
+  deletePracticalExperience(id) {
+    this.setState((state) => ({
+      educationalExperiences: state.educationalExperiences.filter(
+        (element) => element.id !== id
+      ),
+    }));
   }
 
   render() {
@@ -55,7 +94,7 @@ class Experience extends React.Component {
       <div className="experience">
         <h2>EXPERIENCES</h2>
         {practicalExperiences.map((experience) => (
-          <div key={uniqid()} className="experience-container">
+          <div key={experience.id} className="experience-container">
             <div className="experience-position">
               <h3>
                 {experience.company} <span>{experience.position}</span>
