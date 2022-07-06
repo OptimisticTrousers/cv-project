@@ -4,6 +4,7 @@
 import React from 'react';
 import './Education.css';
 import uniqid from 'uniqid';
+import DeleteButton from '../DeleteButton/DeleteButton';
 
 class Education extends React.Component {
   constructor(props) {
@@ -104,12 +105,10 @@ class Education extends React.Component {
               index,
               'date'
             )}
-            <button
-              onClick={() => deleteEducationalExperience(experience.id)}
-              type="button"
-            >
-              Delete Educational Experience
-            </button>
+            <DeleteButton
+              handleClick={() => deleteEducationalExperience(experience.id)}
+              textContent="Delete Educational Experience"
+            />
           </div>
         ))}
       </div>
