@@ -1,3 +1,15 @@
+.qualifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qualification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .qualification > p {
     border-top: 3px dotted #e5e5e5;
 }
