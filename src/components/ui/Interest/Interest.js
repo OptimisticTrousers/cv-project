@@ -3,14 +3,6 @@ import React from 'react';
 import './Interest.css';
 
 class Interest extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.onImageChange = this.onImageChange.bind(this);
-  }
-
-
-
   render() {
     // eslint-disable-next-line react/prop-types
     const {
@@ -20,11 +12,20 @@ class Interest extends React.Component {
       handleChange,
       conditionallyRender,
       index,
+      onImageChange,
     } = this.props;
 
     return (
       <div className="interest">
-        <img src={image} alt="monitor" />
+        {conditionallyRender(
+          <img src={image} alt="monitor" />,
+          'input',
+          undefined,
+          'image',
+          onImageChange,
+          index,
+          'file'
+        )}
         {conditionallyRender(
           <h3>{title}</h3>,
           'input',

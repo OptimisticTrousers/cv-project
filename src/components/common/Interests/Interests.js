@@ -61,8 +61,8 @@ class Interests extends React.Component {
   }
 
   onImageChange(event, index) {
-    if (event.target.files && event.target.files[0]) {
-      const img = event.target.files[0];
+    if (event.target.files && event.target.files[index]) {
+      const img = event.target.files[index];
       this.setState((state) => {
         let newImage = state.interests[index].image;
         newImage = URL.createObjectURL(img);
