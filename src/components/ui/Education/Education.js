@@ -34,17 +34,17 @@ class Education extends React.Component {
 
   handleChange(event, value, index) {
     this.setState((state) => {
-      const { tasks } = state;
-      const task = tasks[index];
-      task[value] = event.target.value;
+      const { educationalExperiences } = state;
+      const educationalExperience = educationalExperiences[index];
+      educationalExperience[value] = event.target.value;
       return {
-        tasks,
+        educationalExperiences,
       };
     });
   }
 
   render() {
-    const { conditionallyRender, submitted } = this.props;
+    const { conditionallyRender } = this.props;
     const { handleChange } = this;
     const { educationalExperiences } = this.state;
     return (
@@ -53,9 +53,9 @@ class Education extends React.Component {
         {educationalExperiences.map((experience, index) => (
           <div key={uniqid()} className="education-section">
             {conditionallyRender(
-              <strong>{this.state.tasks[index].major}</strong>,
+              <strong>{educationalExperiences[index].major}</strong>,
               'input',
-              this.state.tasks[index].major,
+              educationalExperiences[index].major,
               `major`,
               handleChange,
               index
