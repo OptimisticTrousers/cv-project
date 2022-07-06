@@ -4,10 +4,6 @@
     grid-row: 1;
 }
 
-.experience>*{
-    line-height: 2.5;
-}
-
 .experience-position{
     display: flex;
     justify-content: space-between;

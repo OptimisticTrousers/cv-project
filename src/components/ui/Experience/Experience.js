@@ -55,6 +55,15 @@ class Experience extends React.Component {
           dateFrom: '2018-01-28',
           dateTo: '2019-07-12',
         },
+        {
+          id: uniqid(),
+          company: 'OptimisticTrouser',
+          position: 'Junior Developer',
+          description:
+            'Adipisicing qui dolor duis officia nostrud laborum eu ea consectetur. Enim mollit ut tempor qui mollit. Sint magna sit elit officia exercitation nisi commodo in consectetur.Enim ullamco amet aliqua incididunt dolor deserunt. Sint ea ipsum consectetur sit. Ipsum commodo fugiat officia ut enim culpa occaecat nisi fugiat elit cupidatat pariatur. Sint ad laboris pariatur cillum ad commodo magna mollit nostrud nulla culpa exercitation fugiat.',
+          dateFrom: '2018-01-28',
+          dateTo: '2019-07-12',
+        },
       ],
     };
 
