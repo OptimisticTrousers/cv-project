@@ -32,20 +32,22 @@ class Hello extends React.Component {
           <div className="hello-image">
             <img src={profilePicture} alt="applicant" />
           </div>
-          {conditionallyRender(
-            <h2 className="hello-greeting">{greeting}</h2>,
-            'input',
-            greeting,
-            'greeting',
-            handleChange
-          )}
-          {conditionallyRender(
-            <p className="hello-about">{about}</p>,
-            'textarea',
-            about,
-            'about',
-            handleChange
-          )}
+          <div className="inputs">
+            {conditionallyRender(
+              <h2 className="hello-greeting">{greeting}</h2>,
+              'input',
+              greeting,
+              'greeting',
+              handleChange
+            )}
+            {conditionallyRender(
+              <p className="hello-about">{about}</p>,
+              'textarea',
+              about,
+              'about',
+              handleChange
+            )}
+          </div>
         </div>
       </div>
     );

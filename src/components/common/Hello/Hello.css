@@ -17,6 +17,14 @@
     margin: 0 auto;
 }
 
+input {
+    line-height: 2;
+}
+
+input{
+    margin: 1rem 0;
+}
+
 @media(max-width: 1000px){
     .hello>*{
         width: 100%;
