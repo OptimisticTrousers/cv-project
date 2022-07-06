@@ -79,7 +79,7 @@ class Education extends React.Component {
   }
 
   render() {
-    const { conditionallyRender } = this.props;
+    const { conditionallyRender, submitted } = this.props;
     const {
       handleChange,
       deleteEducationalExperience,
@@ -93,6 +93,7 @@ class Education extends React.Component {
           <Button
             handleClick={() => addEducationalExperience()}
             textContent="Add Educational Experience"
+            submitted={submitted}
           />
         </div>
         {educationalExperiences.map((experience, index) => (
@@ -136,6 +137,7 @@ class Education extends React.Component {
             <Button
               handleClick={() => deleteEducationalExperience(experience.id)}
               textContent="Delete Educational Experience"
+              submitted={submitted}
             />
           </div>
         ))}

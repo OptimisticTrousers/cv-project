@@ -4,11 +4,13 @@ import './Button.css';
 
 class Button extends React.Component {
   render() {
-    const { handleClick, textContent } = this.props;
-    return (
+    const { handleClick, textContent, submitted } = this.props;
+    return !submitted ? (
       <button className="modify" type="button" onClick={handleClick}>
         {textContent}
       </button>
+    ) : (
+      []
     );
   }
 }
