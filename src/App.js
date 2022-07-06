@@ -64,16 +64,15 @@ class App extends React.Component {
   render() {
     const { handleEdit, handleSubmit } = this;
     const { submitted } = this.state;
+
+    const { conditionallyRender } = this;
     return (
       <div className="App">
         <form onSubmit={handleSubmit}>
           <Header />
           <Hello />
           <Interests />
-          <CV
-            conditionallyRender={this.conditionallyRender}
-            submitted={submitted}
-          />
+          <CV conditionallyRender={conditionallyRender} submitted={submitted} />
           <button type="submit" className="save">
             Click Me to Save
           </button>
