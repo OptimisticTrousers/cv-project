@@ -3,6 +3,7 @@ import Hello from './components/common/Hello/Hello';
 import Interests from './components/common/Interests/Interests';
 import CV from './components/common/CV/CV';
 import Footer from './components/common/Footer/Footer';
+import conditionallyRender from './helpers/conditionalRender';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Hello />
       <Interests />
-      <CV />
+      <CV conditionallyRender={conditionallyRender} />
       <Footer />
     </div>
   );

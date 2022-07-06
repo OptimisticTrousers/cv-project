@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prop-types */
 import React from 'react';
@@ -19,7 +20,6 @@ class Profile extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.conditionallyRender = this.conditionallyRender.bind(this);
   }
 
   handleChange(event, value) {
@@ -28,38 +28,11 @@ class Profile extends React.Component {
     });
   }
 
-  conditionallyRender(
-    submittedComponent,
-    inputType,
-    value,
-    propName,
-    type = 'text'
-  ) {
-    const { submitted } = this.props;
-
-    return submitted ? (
-      submittedComponent
-    ) : inputType === 'input' ? (
-      <Input
-        value={value}
-        handleChange={(event) => this.handleChange(event, propName)}
-        type={type}
-      />
-    ) : inputType === 'textarea' ? (
-      <Textarea
-        value={value}
-        handleChange={(event) => this.handleChange(event, propName)}
-      />
-    ) : (
-      []
-    );
-  }
-
   render() {
     const { name, description, portfolio, email, phoneNumber, location } =
       this.state;
 
-    const { conditionallyRender } = this;
+    const { conditionallyRender, submitted } = this.props;
 
     return (
       <div className="head">

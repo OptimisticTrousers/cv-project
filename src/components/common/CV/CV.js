@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './CV.css';
 import Experience from '../../ui/Experience/Experience';
@@ -120,6 +121,7 @@ class CV extends React.Component {
       profile;
 
     const { submitted } = this.state;
+    const { conditionallyRender } = this.props;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
@@ -133,6 +135,7 @@ class CV extends React.Component {
               phoneNumber={phoneNumber}
               location={location}
               submitted={submitted}
+              conditionallyRender={conditionallyRender}
             />
             <div className="curriculum-vitae-grid">
               <Experience
