@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 
 class Experience extends React.Component {
   render() {
-    const { title, experiences, submitted, conditionallyRender } = this.props;
+    const { title, experiences, conditionallyRender } = this.props;
     return (
       <div className="experience">
         <h2>{title}</h2>
