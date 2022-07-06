@@ -62,9 +62,9 @@ class Qualifications extends React.Component {
           submitted={submitted}
         />
         {qualifications.map((qualification, index) => (
-          <div>
+          <div key={qualification.id}>
             {conditionallyRender(
-              <p key={qualification.id}>{qualification.qualification}</p>,
+              <p>{qualification.qualification}</p>,
               'input',
               qualification.qualification,
               'qualification',
