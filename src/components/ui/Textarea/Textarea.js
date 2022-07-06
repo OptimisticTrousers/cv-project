@@ -5,11 +5,7 @@ import './Textarea.css';
 class Textarea extends React.Component {
   render() {
     const { value, handleChange } = this.props;
-    return (
-      <textarea required onChange={handleChange}>
-        {value}
-      </textarea>
-    );
+    return <textarea value={value} required onChange={handleChange} />;
   }
 }
 
