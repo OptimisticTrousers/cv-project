@@ -3,6 +3,14 @@ import React from 'react';
 import './Interest.css';
 
 class Interest extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onImageChange = this.onImageChange.bind(this);
+  }
+
+
+
   render() {
     // eslint-disable-next-line react/prop-types
     const {

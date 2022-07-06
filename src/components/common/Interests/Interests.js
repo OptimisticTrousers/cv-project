@@ -59,6 +59,19 @@ class Interests extends React.Component {
     });
   }
 
+  onImageChange(event, index) {
+    if (event.target.files && event.target.files[0]) {
+      const img = event.target.files[0];
+      this.setState((state) => {
+        let newImage = state.interests[index].image;
+        newImage = URL.createObjectURL(img);
+        return {
+          newImage,
+        };
+      });
+    }
+  }
+
   render() {
     const { interests } = this.state;
     const { conditionallyRender } = this.props;
