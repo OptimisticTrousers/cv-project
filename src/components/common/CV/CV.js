@@ -45,19 +45,6 @@ const practicalExperiences = [
   },
 ];
 
-const skills = [
-  'HTML',
-  'CSS',
-  'Javascript',
-  'React',
-  'Tailwind CSS',
-  'GraphQL',
-  'Next.js',
-  'Node.js',
-  'Express.js',
-  'MongoDB',
-];
-
 const qualifications = [
   'Won USMCD Hackathon',
   'Best Designer Award of 2014',
@@ -79,7 +66,7 @@ class CV extends React.Component {
               conditionallyRender={conditionallyRender}
             />
             <Education conditionallyRender={conditionallyRender} />
-            <Skills skills={skills} />
+            <Skills conditionallyRender={conditionallyRender} />
             <Qualifications qualifications={qualifications} />
           </div>
         </div>

@@ -3,8 +3,28 @@ import React from 'react';
 import './Skills.css';
 
 class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      skills: [
+        'HTML',
+        'CSS',
+        'Javascript',
+        'React',
+        'Tailwind CSS',
+        'GraphQL',
+        'Next.js',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+      ],
+    };
+  }
+
   render() {
-    const { skills } = this.props;
+    const { conditionallyRender } = this.props;
+    const { skills } = this.state;
     return (
       <div className="skills">
         <h2 className="skills-title">SKILLS</h2>
