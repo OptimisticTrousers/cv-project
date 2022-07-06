@@ -6,7 +6,23 @@
     column-gap: 2rem;
     margin-top: 2rem;
 }
-
+button{
+    padding: 0.25rem 0.75rem;
+    background-color:#00a4e7;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 500px;
+    color: black;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+button:hover{
+    transition: all ease-in-out 0.2s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 .buttons > button{
     width: max-content;
     padding: 1rem 3rem;
