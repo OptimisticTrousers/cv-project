@@ -61,13 +61,15 @@ class Interests extends React.Component {
   }
 
   onImageChange(event, index) {
-    if (event.target.files && event.target.files[index]) {
-      const img = event.target.files[index];
+    console.log(event.target.files);
+    if (event.target.files && event.target.files[0]) {
+      const img = event.target.files[0];
       this.setState((state) => {
-        let newImage = state.interests[index].image;
-        newImage = URL.createObjectURL(img);
+        const { interests } = state;
+        const interest = interests[index];
+        interest.image = URL.createObjectURL(img);
         return {
-          newImage,
+          interests,
         };
       });
     }
@@ -90,7 +92,7 @@ class Interests extends React.Component {
               handleChange={handleChange}
               conditionallyRender={conditionallyRender}
               index={index}
-              onImageChange={onImageChange}
+              onImageChange={(event) => onImageChange(event, index)}
             />
           ))}
         </div>
