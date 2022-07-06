@@ -28,15 +28,26 @@ class Skills extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange(event, value, index) {
     this.setState((state) => {
       const { skills } = state;
-      skills.skill = event.target.value;
+      const skill = skills[index];
+      skill[value] = event.target.value;
       return {
         skills,
       };
     });
   }
+  /*   handleChange(event, value, index) {
+    this.setState((state) => {
+      const { educationalExperiences } = state;
+      const educationalExperience = educationalExperiences[index];
+      educationalExperience[value] = event.target.value;
+      return {
+        educationalExperiences,
+      };
+    });
+  } */
 
   addSkill() {
     const defaultEducation = {

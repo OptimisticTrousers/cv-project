@@ -31,16 +31,6 @@ class Qualifications extends React.Component {
       };
     });
   }
-  /*   handleChange(event, value, index) {
-    this.setState((state) => {
-      const { educationalExperiences } = state;
-      const educationalExperience = educationalExperiences[index];
-      educationalExperience[value] = event.target.value;
-      return {
-        educationalExperiences,
-      };
-    });
-  } */
 
   addQualification() {
     const defaultEducation = {
