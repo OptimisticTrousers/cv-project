@@ -31,7 +31,7 @@ class Skills extends React.Component {
   handleChange(event, value, index) {
     this.setState((state) => {
       const { skills } = state;
-      skills[value] = event.target.value;
+      skills.skill = event.target.value;
       return {
         skills,
       };

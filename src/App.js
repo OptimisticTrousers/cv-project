@@ -74,13 +74,14 @@ class App extends React.Component {
     const { handleEdit, handleSubmit } = this;
 
     const { conditionallyRender } = this;
+    const { submitted } = this.state;
     return (
       <div className="App">
         <form onSubmit={handleSubmit}>
           <Header />
           <Hello />
           <Interests />
-          <CV conditionallyRender={conditionallyRender} />
+          <CV conditionallyRender={conditionallyRender} submitted={submitted} />
           <button type="submit" className="save">
             Click Me to Save
           </button>

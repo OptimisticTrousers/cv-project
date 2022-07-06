@@ -6,7 +6,7 @@ class Button extends React.Component {
   render() {
     const { handleClick, textContent } = this.props;
     return (
-      <button type="button" onClick={handleClick}>
+      <button className="modify" type="button" onClick={handleClick}>
         {textContent}
       </button>
     );
