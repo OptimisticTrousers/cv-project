@@ -37,6 +37,7 @@ class Education extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.deleteEducationalExperience =
       this.deleteEducationalExperience.bind(this);
   }
@@ -50,6 +51,20 @@ class Education extends React.Component {
         educationalExperiences,
       };
     });
+  }
+
+  handleClick() {
+    const defaultEducation = {
+      id: uniqid(),
+      school: 'New School',
+      major: 'New Major',
+      dateFrom: '0000-00-00',
+      dateTo: '0000-00-00',
+    };
+    this.setState((state) => ({
+      educationalExperiences:
+        state.educationalExperiences.push(defaultEducation),
+    }));
   }
 
   deleteEducationalExperience(id) {
@@ -67,6 +82,7 @@ class Education extends React.Component {
     return (
       <div className="education">
         <h2>EDUCATION</h2>
+        <button type="button">ADD</button>
         {educationalExperiences.map((experience, index) => (
           // Fixing bug where text was unfocused after each character: https://stackoverflow.com/questions/51268900/text-input-unfocused-after-one-character-react
           <div key={experience.id} className="education-section">
