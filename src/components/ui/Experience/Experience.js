@@ -88,7 +88,7 @@ class Experience extends React.Component {
 
   deletePracticalExperience(id) {
     this.setState((state) => ({
-      educationalExperiences: state.educationalExperiences.filter(
+      practicalExperiences: state.practicalExperiences.filter(
         (element) => element.id !== id
       ),
     }));
