@@ -7,3 +7,9 @@ p.school{
 .education-section > span:nth-child(1){
     font-weight: 900;
 }
+.education-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
