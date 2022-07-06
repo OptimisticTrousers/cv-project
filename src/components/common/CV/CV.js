@@ -45,8 +45,6 @@ const practicalExperiences = [
   },
 ];
 
-
-
 class CV extends React.Component {
   render() {
     const { conditionallyRender, submitted } = this.props;
@@ -69,7 +67,10 @@ class CV extends React.Component {
               conditionallyRender={conditionallyRender}
               submitted={submitted}
             />
-            <Qualifications conditionallyRender={conditionallyRender} />
+            <Qualifications
+              conditionallyRender={conditionallyRender}
+              submitted={submitted}
+            />
           </div>
         </div>
       </div>

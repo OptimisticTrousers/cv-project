@@ -28,7 +28,7 @@ class Skills extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event, value, index) {
+  handleChange(event) {
     this.setState((state) => {
       const { skills } = state;
       skills.skill = event.target.value;
