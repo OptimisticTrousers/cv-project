@@ -132,7 +132,14 @@ class Experience extends React.Component {
                 )}
               </div>
               <p>
-                <span className="date">{experience.dateFrom}</span> -{' '}
+                {conditionallyRender(
+                  <span className="date">{experience.dateFrom}</span>,
+                  'input',
+                  practicalExperiences[index].dateFrom,
+                  'dateFrom',
+                  handleChange,
+                  index
+                )}
                 <span className="date">{experience.dateTo}</span>
               </p>
             </div>
