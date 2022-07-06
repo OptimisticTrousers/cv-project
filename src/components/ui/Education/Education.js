@@ -36,6 +36,8 @@ class Education extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.deleteEducationalExperience =
+      this.deleteEducationalExperience.bind(this);
   }
 
   handleChange(event, value, index) {
@@ -49,9 +51,17 @@ class Education extends React.Component {
     });
   }
 
+  deleteEducationalExperience(id) {
+    this.setState((state) => ({
+      educationalExperiences: state.educationalExperiences.filter(
+        (element) => element.id !== id
+      ),
+    }));
+  }
+
   render() {
     const { conditionallyRender } = this.props;
-    const { handleChange } = this;
+    const { handleChange, deleteEducationalExperience } = this;
     const { educationalExperiences } = this.state;
     return (
       <div className="education">
@@ -94,6 +104,12 @@ class Education extends React.Component {
               index,
               'date'
             )}
+            <button
+              onClick={() => deleteEducationalExperience(experience.id)}
+              type="button"
+            >
+              Delete Educational Experience
+            </button>
           </div>
         ))}
       </div>

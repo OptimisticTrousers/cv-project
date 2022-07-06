@@ -39,8 +39,8 @@ class App extends React.Component {
     value,
     propName,
     handleChange,
-    index = undefined,
-    type = 'text'
+    index,
+    type
   ) {
     const { submitted } = this.state;
 
