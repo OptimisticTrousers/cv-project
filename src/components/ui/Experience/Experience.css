@@ -11,6 +11,7 @@
 .experience-position{
     display: flex;
     justify-content: space-between;
+    column-gap: 1rem;
 }
 
 .company-position > span{
@@ -26,4 +27,8 @@ span.date{
     justify-content: flex-start;
     gap: 1rem;
     align-items: center;
+}
+
+p.dates{
+    display: flex;
 }
