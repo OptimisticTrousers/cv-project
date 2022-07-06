@@ -59,7 +59,7 @@
 
 @media(max-width: 1280px){
     .curriculum-vitae-container{
-        width: inherit;
+        width: 99%;
         padding: 0 2rem;
     }
 
