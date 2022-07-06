@@ -110,7 +110,7 @@ class Experience extends React.Component {
           textContent="Add Practical Experience"
           submitted={submitted}
         />
-        {practicalExperiences.map((experience) => (
+        {practicalExperiences.map((experience, index) => (
           <div key={experience.id} className="experience-container">
             <div className="experience-position">
               <h3>
@@ -121,7 +121,16 @@ class Experience extends React.Component {
                 <span>{experience.dateTo}</span>
               </p>
             </div>
-            <p className="experience-description">{experience.description}</p>
+            {conditionallyRender(
+              <p className="experience-description">
+                {experience.description}
+              </p>,
+              'textarea',
+              practicalExperiences[index].description,
+              'description',
+              handleChange,
+              index
+            )}
             <Button
               handleClick={() => deletePracticalExperience(experience.id)}
               textContent="Delete Practical Experience"

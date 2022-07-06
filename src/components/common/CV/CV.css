@@ -32,7 +32,7 @@
     display: flex;
     gap: 1.5rem;
 }
-.overview>*{
+.overview>*:not(textarea){
     line-height: 3;
 }
 
