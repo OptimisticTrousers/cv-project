@@ -113,9 +113,10 @@ class Experience extends React.Component {
         {practicalExperiences.map((experience, index) => (
           <div key={experience.id} className="experience-container">
             <div className="experience-position">
-              <h3>
-                {experience.company} <span>{experience.position}</span>
-              </h3>
+              <div className="company-position">
+                <h3>{experience.company}</h3>
+                <span>{experience.position}</span>
+              </div>
               <p>
                 <span className="date">{experience.dateFrom}</span> -{' '}
                 <span className="date">{experience.dateTo}</span>

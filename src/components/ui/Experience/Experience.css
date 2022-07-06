@@ -13,10 +13,17 @@
     justify-content: space-between;
 }
 
-.experience-position > h3 > span{
+.company-position > span{
    color: #00a4e7;
 }
 
 span.date{
     font-weight: 900;
+}
+
+.company-position{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
 }
