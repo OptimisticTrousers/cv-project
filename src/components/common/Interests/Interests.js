@@ -14,6 +14,7 @@ class Interests extends React.Component {
     this.state = {
       interests: [
         {
+          id: uniqid(),
           image: monitor,
           title: 'RESPONSIVE WEB DESIGN',
           description: `
@@ -26,6 +27,7 @@ class Interests extends React.Component {
     `,
         },
         {
+          id: uniqid(),
           image: website,
           title: 'WEB DEVELOPMENT',
           description: `
@@ -38,6 +40,7 @@ class Interests extends React.Component {
     `,
         },
         {
+          id: uniqid(),
           image: contract,
           title: 'PRINT DESIGN',
           description: `
@@ -50,6 +53,7 @@ class Interests extends React.Component {
     `,
         },
         {
+          id: uniqid(),
           image: branding,
           title: 'BRANDING',
           description: `
@@ -63,10 +67,23 @@ class Interests extends React.Component {
         },
       ],
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event, value, index) {
+    this.setState((state) => {
+      const { interests } = state;
+      const interest = interests[index];
+      interest[value] = event.target.value;
+      return {
+        interests,
+      };
+    });
   }
 
   render() {
-    const {interests} = this.state
+    const { interests } = this.state;
     return (
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
