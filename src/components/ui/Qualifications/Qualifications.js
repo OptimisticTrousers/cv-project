@@ -2,6 +2,7 @@
 import React from 'react';
 import './Qualifications.css';
 import uniqid from 'uniqid';
+import Button from '../Button/Button';
 
 class Qualifications extends React.Component {
   constructor(props) {
@@ -50,11 +51,20 @@ class Qualifications extends React.Component {
 
   render() {
     const { qualifications } = this.state;
+    const { submitted } = this.props;
+    const { deleteQualification, addQualification } = this;
     return (
       <div className="qualifications">
         <h2>QUALIFICATIONS</h2>
         {qualifications.map((qualification, index) => (
-          <p key={qualification.id}>{qualification.qualification}</p>
+          <div>
+            <p key={qualification.id}>{qualification.qualification}</p>
+            <Button
+              handleClick={() => deleteQualification(qualification.id)}
+              textContent="Delete Qualification"
+              submitted={submitted}
+            />
+          </div>
         ))}
       </div>
     );
