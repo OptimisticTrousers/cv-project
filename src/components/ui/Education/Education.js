@@ -12,16 +12,19 @@ class Education extends React.Component {
     this.state = {
       educationalExperiences: [
         {
+          id: uniqid(),
           school: 'University name - Location',
           major: 'Masters in Computer Science',
           date: 'September 2019 - June 2020',
         },
         {
+          id: uniqid(),
           school: 'University name - Location',
           major: 'B.S. Computer Science',
           date: 'September 2014 - June 2018',
         },
         {
+          id: uniqid(),
           school: 'London High School',
           major: 'N/A',
           date: 'September 2010 - June 2014',
@@ -51,7 +54,8 @@ class Education extends React.Component {
       <div className="education">
         <h2>EDUCATION</h2>
         {educationalExperiences.map((experience, index) => (
-          <div key={uniqid()} className="education-section">
+          // Fixing bug where text was unfocused after each character: https://stackoverflow.com/questions/51268900/text-input-unfocused-after-one-character-react
+          <div key={experience.id} className="education-section">
             {conditionallyRender(
               <strong>{educationalExperiences[index].major}</strong>,
               'input',
