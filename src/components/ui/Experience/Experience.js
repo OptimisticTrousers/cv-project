@@ -100,11 +100,13 @@ class Experience extends React.Component {
   render() {
     const { conditionallyRender, submitted } = this.props;
     const { practicalExperiences } = this.state;
+    const { addPracticalExperience, deletePracticalExperience, handleChange } =
+      this;
     return (
       <div className="experience">
         <h2>EXPERIENCES</h2>
         <Button
-          handleClick={() => this.addPracticalExperience()}
+          handleClick={() => addPracticalExperience()}
           textContent="Add Practical Experience"
           submitted={submitted}
         />
@@ -117,6 +119,11 @@ class Experience extends React.Component {
               <p>{experience.date}</p>
             </div>
             <p className="experience-description">{experience.description}</p>
+            <Button
+              handleClick={() => deletePracticalExperience(experience.id)}
+              textContent="Delete Practical Experience"
+              submitted={submitted}
+            />
           </div>
         ))}
       </div>
