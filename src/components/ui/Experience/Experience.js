@@ -2,6 +2,7 @@
 import React from 'react';
 import './Experience.css';
 import uniqid from 'uniqid';
+import Button from '../Button/Button';
 
 class Experience extends React.Component {
   constructor(props) {
@@ -78,6 +79,8 @@ class Experience extends React.Component {
       id: uniqid(),
       company: 'New Company',
       position: 'New Position',
+      description:
+        'Dolor voluptate ad voluptate laborum officia duis veniam. Officia Lorem adipisicing ad in cupidatat sunt do consequat proident Lorem. Voluptate labore adipisicing Lorem dolor adipisicing ut. Amet labore pariatur labore anim aliquip esse irure labore esse incididunt amet sint. Cillum ipsum esse eu ex anim ea ipsum incididunt aliquip officia labore minim ut. Reprehenderit laboris dolore Lorem do laborum tempor. Occaecat ea irure officia laborum tempor Lorem cillum adipisicing aliqua ullamco duis deserunt.',
       dateFrom: new Date().toDateInputValue(),
       dateTo: new Date().toDateInputValue(),
     };
@@ -95,11 +98,16 @@ class Experience extends React.Component {
   }
 
   render() {
-    const { conditionallyRender } = this.props;
+    const { conditionallyRender, submitted } = this.props;
     const { practicalExperiences } = this.state;
     return (
       <div className="experience">
         <h2>EXPERIENCES</h2>
+        <Button
+          handleClick={() => this.addPracticalExperience()}
+          textContent="Add Practical Experience"
+          submitted={submitted}
+        />
         {practicalExperiences.map((experience) => (
           <div key={experience.id} className="experience-container">
             <div className="experience-position">
