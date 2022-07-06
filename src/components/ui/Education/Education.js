@@ -68,7 +68,7 @@ class Education extends React.Component {
               index
             )}
             {conditionallyRender(
-              <p>{educationalExperiences[index].school}</p>,
+              <p className="school">{educationalExperiences[index].school}</p>,
               'input',
               educationalExperiences[index].school,
               'school',
@@ -84,7 +84,7 @@ class Education extends React.Component {
               index,
               'date'
             )}
-            <p>To</p>
+            <p className="to">TO</p>
             {conditionallyRender(
               <p>{educationalExperiences[index].dateTo}</p>,
               'input',
