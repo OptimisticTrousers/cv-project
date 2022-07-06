@@ -82,33 +82,14 @@ const qualifications = [
   'Certificate of Completion for AWS',
 ];
 
-const profile = {
-  name: 'OptimisticTrousers',
-  description:
-    'Ea minim aute nulla reprehenderit dolore mollit qui veniam dolor sunt incididunt fugiat Lorem. Nisi culpa magna aute dolore consectetur ea aliqua eiusmod amet. Voluptate in enim ipsum amet id enim. Eiusmod mollit est pariatur ut do id occaecat aliqua aliqua. Culpa et est pariatur nostrud. Aliquip sint et exercitation sunt irure cupidatat duis. Ipsum non consectetur quis reprehenderit ex.',
-  portfolio: 'optimistictrousers.com',
-  email: 'theoptimistictrouser@protonmail.com',
-  phoneNumber: '555-666-7777',
-  location: 'Earth',
-};
-
 class CV extends React.Component {
   render() {
-    const { name, description, portfolio, email, phoneNumber, location } =
-      profile;
-
     const { conditionallyRender, submitted } = this.props;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
           <Profile
-            name={name}
-            description={description}
-            portfolio={portfolio}
-            email={email}
-            phoneNumber={phoneNumber}
-            location={location}
             submitted={submitted}
             conditionallyRender={conditionallyRender}
           />

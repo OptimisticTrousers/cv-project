@@ -7,12 +7,13 @@ class Profile extends React.Component {
     super(props);
 
     this.state = {
-      name: props.name,
-      description: props.description,
-      portfolio: props.portfolio,
-      email: props.email,
-      phoneNumber: props.phoneNumber,
-      location: props.location,
+      name: 'OptimisticTrousers',
+      description:
+        'Ea minim aute nulla reprehenderit dolore mollit qui veniam dolor sunt incididunt fugiat Lorem. Nisi culpa magna aute dolore consectetur ea aliqua eiusmod amet. Voluptate in enim ipsum amet id enim. Eiusmod mollit est pariatur ut do id occaecat aliqua aliqua. Culpa et est pariatur nostrud. Aliquip sint et exercitation sunt irure cupidatat duis. Ipsum non consectetur quis reprehenderit ex.',
+      portfolio: 'optimistictrousers.com',
+      email: 'theoptimistictrouser@protonmail.com',
+      phoneNumber: '555-666-7777',
+      location: 'Earth',
     };
 
     this.handleChange = this.handleChange.bind(this);
