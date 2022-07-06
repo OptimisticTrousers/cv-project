@@ -84,6 +84,7 @@ class Interests extends React.Component {
 
   render() {
     const { interests } = this.state;
+    const { conditionallyRender } = this.props;
     const { handleChange } = this;
     return (
       <div className="interests">
@@ -95,6 +96,7 @@ class Interests extends React.Component {
               title={interest.title}
               description={interest.description}
               handleChange={handleChange}
+              conditionallyRender={conditionallyRender}
             />
           ))}
         </div>

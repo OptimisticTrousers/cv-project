@@ -4,7 +4,8 @@ import './Interest.css';
 class Interest extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
-    const { image, title, description } = this.props;
+    const { image, title, description, handleChange, conditionallyRender } =
+      this.props;
 
     return (
       <div className="interest">
