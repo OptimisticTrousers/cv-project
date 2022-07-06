@@ -116,6 +116,8 @@ class CV extends React.Component {
             <Experience
               title="PRACTICAL EXPERIENCE"
               experiences={practicalExperiences}
+              submitted={submitted}
+              conditionallyRender={conditionallyRender}
             />
             <Education educationalExperiences={educationalExperiences} />
             <Skills skills={skills} />

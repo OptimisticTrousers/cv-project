@@ -63,7 +63,6 @@ class App extends React.Component {
 
   render() {
     const { handleEdit, handleSubmit } = this;
-    const { submitted } = this.state;
 
     const { conditionallyRender } = this;
     return (
@@ -72,7 +71,7 @@ class App extends React.Component {
           <Header />
           <Hello />
           <Interests />
-          <CV conditionallyRender={conditionallyRender} submitted={submitted} />
+          <CV conditionallyRender={conditionallyRender} />
           <button type="submit" className="save">
             Click Me to Save
           </button>
