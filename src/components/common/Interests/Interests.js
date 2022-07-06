@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Interests.css';
 import uniqid from 'uniqid';
@@ -90,13 +91,14 @@ class Interests extends React.Component {
       <div className="interests">
         <h2>THINGS I LIKE TO DO</h2>
         <div className="interests-container">
-          {interests.map((interest) => (
+          {interests.map((interest, index) => (
             <Interest
               image={interest.image}
               title={interest.title}
               description={interest.description}
               handleChange={handleChange}
               conditionallyRender={conditionallyRender}
+              index={index}
             />
           ))}
         </div>
