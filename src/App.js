@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 import React from 'react';
 import Header from './components/common/Header/Header';
 import Hello from './components/common/Hello/Hello';
@@ -7,6 +8,13 @@ import Footer from './components/common/Footer/Footer';
 import Input from './components/ui/Input/input';
 import Textarea from './components/ui/Textarea/Textarea';
 /* eslint-disable no-nested-ternary */
+
+// Setting today's date as default value for when user creates date https://stackoverflow.com/questions/6982692/how-to-set-input-type-dates-default-value-to-today
+Date.prototype.toDateInputValue = function () {
+  const local = new Date(this);
+  local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+  return local.toJSON().slice(0, 10);
+};
 
 class App extends React.Component {
   constructor(props) {

@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 /* eslint-disable react/no-access-state-in-setstate */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
@@ -37,7 +38,7 @@ class Education extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.addEducationalExperience = this.addEducationalExperience.bind(this);
     this.deleteEducationalExperience =
       this.deleteEducationalExperience.bind(this);
   }
@@ -53,17 +54,19 @@ class Education extends React.Component {
     });
   }
 
-  handleClick() {
+  addEducationalExperience() {
     const defaultEducation = {
       id: uniqid(),
       school: 'New School',
       major: 'New Major',
-      dateFrom: '0000-00-00',
-      dateTo: '0000-00-00',
+      dateFrom: new Date().toDateInputValue(),
+      dateTo: new Date().toDateInputValue(),
     };
     this.setState((state) => ({
-      educationalExperiences:
-        state.educationalExperiences.push(defaultEducation),
+      educationalExperiences: [
+        ...state.educationalExperiences,
+        defaultEducation,
+      ],
     }));
   }
 
@@ -77,12 +80,21 @@ class Education extends React.Component {
 
   render() {
     const { conditionallyRender } = this.props;
-    const { handleChange, deleteEducationalExperience } = this;
+    const {
+      handleChange,
+      deleteEducationalExperience,
+      addEducationalExperience,
+    } = this;
     const { educationalExperiences } = this.state;
     return (
       <div className="education">
-        <h2>EDUCATION</h2>
-        <button type="button">ADD</button>
+        <div className="title">
+          <h2>EDUCATION</h2>
+          <Button
+            handleClick={() => addEducationalExperience()}
+            textContent="Add Educational Experience"
+          />
+        </div>
         {educationalExperiences.map((experience, index) => (
           // Fixing bug where text was unfocused after each character: https://stackoverflow.com/questions/51268900/text-input-unfocused-after-one-character-react
           <div key={experience.id} className="education-section">
