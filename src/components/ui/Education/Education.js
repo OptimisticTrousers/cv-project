@@ -15,19 +15,22 @@ class Education extends React.Component {
           id: uniqid(),
           school: 'University name - Location',
           major: 'Masters in Computer Science',
-          date: 'September 2019 - June 2020',
+          dateFrom: '2019-09-01',
+          dateTo: '2020-05-13',
         },
         {
           id: uniqid(),
           school: 'University name - Location',
           major: 'B.S. Computer Science',
-          date: 'September 2014 - June 2018',
+          dateFrom: '2014-09-01',
+          dateTo: '2018-05-13',
         },
         {
           id: uniqid(),
           school: 'London High School',
           major: 'N/A',
-          date: 'September 2010 - June 2014',
+          dateFrom: '2010-09-06',
+          dateTo: '2014-06-21',
         },
       ],
     };
@@ -73,10 +76,20 @@ class Education extends React.Component {
               index
             )}
             {conditionallyRender(
-              <p>{educationalExperiences[index].date}</p>,
+              <p>{educationalExperiences[index].dateFrom}</p>,
               'input',
-              educationalExperiences[index].date,
-              'date',
+              educationalExperiences[index].dateFrom,
+              'dateFrom',
+              handleChange,
+              index,
+              'date'
+            )}
+            <p>To</p>
+            {conditionallyRender(
+              <p>{educationalExperiences[index].dateTo}</p>,
+              'input',
+              educationalExperiences[index].dateTo,
+              'dateTo',
               handleChange,
               index,
               'date'
