@@ -25,6 +25,17 @@ class Skills extends React.Component {
 
     this.deleteSkill = this.deleteSkill.bind(this);
     this.addSkill = this.addSkill.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event, value, index) {
+    this.setState((state) => {
+      const { skills } = state;
+      skills[value] = event.target.value;
+      return {
+        skills,
+      };
+    });
   }
 
   addSkill() {
