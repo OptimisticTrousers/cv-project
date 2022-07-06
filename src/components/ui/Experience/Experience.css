@@ -3,28 +3,23 @@
     background-color: white;
     grid-row: 1;
 }
-
 .experience-position{
     display: flex;
     justify-content: space-between;
     column-gap: 1rem;
 }
-
 .company-position > span{
    color: #00a4e7;
 }
-
 span.date{
     font-weight: 900;
 }
-
 .company-position{
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
     align-items: center;
 }
-
 p.dates{
     display: flex;
 }
