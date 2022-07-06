@@ -16,7 +16,21 @@ class App extends React.Component {
       submitted: false,
     };
     this.conditionallyRender = this.conditionallyRender.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState((state) => ({
+      submitted: !state.submitted,
+    }));
+  }
+
+  handleEdit() {
+    this.setState({
+      submitted: false,
+    });
   }
 
   handleChange(event, value) {
@@ -53,13 +67,22 @@ class App extends React.Component {
   }
 
   render() {
+    const { handleEdit, handleSubmit } = this;
+    const { submitted } = this.state;
     return (
       <div className="App">
-        <Header />
-        <Hello />
-        <Interests />
-        <CV conditionallyRender={this.conditionallyRender} />
-        <Footer />
+        <form onSubmit={handleSubmit}>
+          <Header />
+          <Hello />
+          <Interests />
+          <CV
+            conditionallyRender={this.conditionallyRender}
+            handlEdit={handleEdit}
+            handleSubmit={handleSubmit}
+            submitted={submitted}
+          />
+          <Footer />
+        </form>
       </div>
     );
   }

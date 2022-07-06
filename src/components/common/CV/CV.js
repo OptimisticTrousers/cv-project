@@ -93,66 +93,40 @@ const profile = {
 };
 
 class CV extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      submitted: false,
-    };
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleEdit = this.handleEdit.bind(this);
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    this.setState((state) => ({
-      submitted: !state.submitted,
-    }));
-  }
-
-  handleEdit() {
-    this.setState({
-      submitted: false,
-    });
-  }
-
   render() {
     const { name, description, portfolio, email, phoneNumber, location } =
       profile;
 
-    const { submitted } = this.state;
-    const { conditionallyRender } = this.props;
+    const { conditionallyRender, submitted } = this.props;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
-          <form onSubmit={this.handleSubmit}>
-            <Profile
-              name={name}
-              description={description}
-              portfolio={portfolio}
-              email={email}
-              phoneNumber={phoneNumber}
-              location={location}
-              submitted={submitted}
-              conditionallyRender={conditionallyRender}
+          <Profile
+            name={name}
+            description={description}
+            portfolio={portfolio}
+            email={email}
+            phoneNumber={phoneNumber}
+            location={location}
+            submitted={submitted}
+            conditionallyRender={conditionallyRender}
+          />
+          <div className="curriculum-vitae-grid">
+            <Experience
+              title="PRACTICAL EXPERIENCE"
+              experiences={practicalExperiences}
             />
-            <div className="curriculum-vitae-grid">
-              <Experience
-                title="PRACTICAL EXPERIENCE"
-                experiences={practicalExperiences}
-              />
-              <Education educationalExperiences={educationalExperiences} />
-              <Skills skills={skills} />
-              <Qualifications qualifications={qualifications} />
-              <button type="submit" className="save">
-                Click Me to Save
-              </button>
-              <button type="button" onClick={this.handleEdit}>
-                Edit
-              </button>
-            </div>
-          </form>
+            <Education educationalExperiences={educationalExperiences} />
+            <Skills skills={skills} />
+            <Qualifications qualifications={qualifications} />
+            <button type="submit" className="save">
+              Click Me to Save
+            </button>
+            <button type="button" onClick={this.handleEdit}>
+              Edit
+            </button>
+          </div>
         </div>
       </div>
     );

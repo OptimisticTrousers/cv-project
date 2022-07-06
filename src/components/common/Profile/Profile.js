@@ -3,8 +3,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Profile.css';
-import Input from '../../ui/Input/input';
-import Textarea from '../../ui/Textarea/Textarea';
 
 class Profile extends React.Component {
   constructor(props) {
