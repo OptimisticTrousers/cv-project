@@ -79,7 +79,7 @@ class App extends React.Component {
       <div className="App">
         <form onSubmit={handleSubmit}>
           <Header conditionallyRender={conditionallyRender} />
-          <Hello />
+          <Hello conditionallyRender={conditionallyRender} />
           <Interests />
           <CV conditionallyRender={conditionallyRender} submitted={submitted} />
           <button type="submit" className="save">
