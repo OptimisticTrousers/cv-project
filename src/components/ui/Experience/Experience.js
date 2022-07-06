@@ -117,8 +117,8 @@ class Experience extends React.Component {
                 {experience.company} <span>{experience.position}</span>
               </h3>
               <p>
-                <span>{experience.dateFrom}</span> -{' '}
-                <span>{experience.dateTo}</span>
+                <span className="date">{experience.dateFrom}</span> -{' '}
+                <span className="date">{experience.dateTo}</span>
               </p>
             </div>
             {conditionallyRender(

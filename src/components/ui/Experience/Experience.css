@@ -13,6 +13,10 @@
     justify-content: space-between;
 }
 
-span{
-    color: black;
+.experience-position > h3 > span{
+   color: #00a4e7;
+}
+
+span.date{
+    font-weight: 900;
 }
