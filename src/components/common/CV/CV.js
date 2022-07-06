@@ -119,7 +119,10 @@ class CV extends React.Component {
               submitted={submitted}
               conditionallyRender={conditionallyRender}
             />
-            <Education educationalExperiences={educationalExperiences} />
+            <Education
+              educationalExperiences={educationalExperiences}
+              conditionallyRender={conditionallyRender}
+            />
             <Skills skills={skills} />
             <Qualifications qualifications={qualifications} />
           </div>
