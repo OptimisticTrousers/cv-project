@@ -45,11 +45,7 @@ const practicalExperiences = [
   },
 ];
 
-const qualifications = [
-  'Won USMCD Hackathon',
-  'Best Designer Award of 2014',
-  'Certificate of Completion for AWS',
-];
+
 
 class CV extends React.Component {
   render() {
@@ -73,7 +69,7 @@ class CV extends React.Component {
               conditionallyRender={conditionallyRender}
               submitted={submitted}
             />
-            <Qualifications qualifications={qualifications} />
+            <Qualifications conditionallyRender={conditionallyRender} />
           </div>
         </div>
       </div>
