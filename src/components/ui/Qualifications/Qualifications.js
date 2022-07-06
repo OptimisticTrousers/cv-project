@@ -21,15 +21,26 @@ class Qualifications extends React.Component {
     this.deleteQualification = this.deleteQualification.bind(this);
   }
 
-  handleChange(event) {
+  handleChange(event, value, index) {
     this.setState((state) => {
       const { qualifications } = state;
-      qualifications.qualification = event.target.value;
+      const qualification = qualifications[index];
+      qualification[value] = event.target.value;
       return {
         qualifications,
       };
     });
   }
+  /*   handleChange(event, value, index) {
+    this.setState((state) => {
+      const { educationalExperiences } = state;
+      const educationalExperience = educationalExperiences[index];
+      educationalExperience[value] = event.target.value;
+      return {
+        educationalExperiences,
+      };
+    });
+  } */
 
   addQualification() {
     const defaultEducation = {
