@@ -77,10 +77,14 @@ class App extends React.Component {
           <Interests />
           <CV
             conditionallyRender={this.conditionallyRender}
-            handlEdit={handleEdit}
-            handleSubmit={handleSubmit}
             submitted={submitted}
           />
+          <button type="submit" className="save">
+            Click Me to Save
+          </button>
+          <button type="button" onClick={this.handleEdit}>
+            Edit
+          </button>
           <Footer />
         </form>
       </div>

@@ -120,12 +120,6 @@ class CV extends React.Component {
             <Education educationalExperiences={educationalExperiences} />
             <Skills skills={skills} />
             <Qualifications qualifications={qualifications} />
-            <button type="submit" className="save">
-              Click Me to Save
-            </button>
-            <button type="button" onClick={this.handleEdit}>
-              Edit
-            </button>
           </div>
         </div>
       </div>
