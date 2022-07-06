@@ -114,7 +114,14 @@ class Experience extends React.Component {
           <div key={experience.id} className="experience-container">
             <div className="experience-position">
               <div className="company-position">
-                <h3>{experience.company}</h3>
+                {conditionallyRender(
+                  <h3>{experience.company}</h3>,
+                  'input',
+                  practicalExperiences[index].company,
+                  'company',
+                  handleChange,
+                  index
+                )}
                 <span>{experience.position}</span>
               </div>
               <p>
