@@ -64,11 +64,11 @@ class Experience extends React.Component {
 
   handleChange(event, value, index) {
     this.setState((state) => {
-      const { educationalExperiences } = state;
-      const educationalExperience = educationalExperiences[index];
-      educationalExperience[value] = event.target.value;
+      const { practicalExperiences } = state;
+      const practicalExperience = practicalExperiences[index];
+      practicalExperience[value] = event.target.value;
       return {
-        educationalExperiences,
+        practicalExperiences,
       };
     });
   }
