@@ -45,24 +45,6 @@ const practicalExperiences = [
   },
 ];
 
-const educationalExperiences = [
-  {
-    school: 'University name - Location',
-    major: 'Masters in Computer Science',
-    date: 'September 2019 - June 2020',
-  },
-  {
-    school: 'University name - Location',
-    major: 'B.S. Computer Science',
-    date: 'September 2014 - June 2018',
-  },
-  {
-    school: 'London High School',
-    major: 'N/A',
-    date: 'September 2010 - June 2014',
-  },
-];
-
 const skills = [
   'HTML',
   'CSS',
@@ -84,26 +66,19 @@ const qualifications = [
 
 class CV extends React.Component {
   render() {
-    const { conditionallyRender, submitted } = this.props;
+    const { conditionallyRender } = this.props;
     return (
       <div className="curriculum-vitae">
         <div className="curriculum-vitae-container">
           <h2>CURRICULUM VITAE</h2>
-          <Profile
-            submitted={submitted}
-            conditionallyRender={conditionallyRender}
-          />
+          <Profile conditionallyRender={conditionallyRender} />
           <div className="curriculum-vitae-grid">
             <Experience
               title="PRACTICAL EXPERIENCE"
               experiences={practicalExperiences}
-              submitted={submitted}
               conditionallyRender={conditionallyRender}
             />
-            <Education
-              educationalExperiences={educationalExperiences}
-              conditionallyRender={conditionallyRender}
-            />
+            <Education conditionallyRender={conditionallyRender} />
             <Skills skills={skills} />
             <Qualifications qualifications={qualifications} />
           </div>
