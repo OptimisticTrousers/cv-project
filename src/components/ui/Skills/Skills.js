@@ -55,19 +55,27 @@ class Skills extends React.Component {
   }
 
   render() {
-    const { conditionallyRender } = this.props;
+    const { conditionallyRender, submitted } = this.props;
     const { skills } = this.state;
-    const { deleteSkill } = this;
+    const { deleteSkill, handleChange } = this;
     return (
       <div className="skills">
         <h2 className="skills-title">SKILLS</h2>
         <ul className="skills-list">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <div key={skill.id}>
-              <li>{skill.skill}</li>
+              {conditionallyRender(
+                <li>{skill.skill}</li>,
+                'input',
+                skill.skill,
+                'skill',
+                handleChange,
+                index
+              )}
               <Button
                 handleClick={() => deleteSkill(skill.id)}
                 textContent="Delete Skill"
+                submitted={submitted}
               />
             </div>
           ))}
