@@ -116,7 +116,10 @@ class Experience extends React.Component {
               <h3>
                 {experience.company} <span>{experience.position}</span>
               </h3>
-              <p>{experience.date}</p>
+              <p>
+                <span>{experience.dateFrom}</span> -{' '}
+                <span>{experience.dateTo}</span>
+              </p>
             </div>
             <p className="experience-description">{experience.description}</p>
             <Button

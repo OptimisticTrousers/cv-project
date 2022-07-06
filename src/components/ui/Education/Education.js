@@ -100,7 +100,7 @@ class Education extends React.Component {
           // Fixing bug where text was unfocused after each character: https://stackoverflow.com/questions/51268900/text-input-unfocused-after-one-character-react
           <div key={experience.id} className="education-section">
             {conditionallyRender(
-              <strong>{educationalExperiences[index].major}</strong>,
+              <span>{educationalExperiences[index].major}</span>,
               'input',
               educationalExperiences[index].major,
               `major`,
