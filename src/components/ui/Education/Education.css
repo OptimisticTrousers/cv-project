@@ -4,3 +4,6 @@
 p.school{
     color: #00a4e7;
 }
+.education-section > span:nth-child(1){
+    font-weight: 900;
+}
