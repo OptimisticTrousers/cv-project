@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import './DeleteButton.css';
+import './Button.css';
 
-class DeleteButton extends React.Component {
+class Button extends React.Component {
   render() {
     const { handleClick, textContent } = this.props;
     return (
@@ -13,4 +13,4 @@ class DeleteButton extends React.Component {
   }
 }
 
-export default DeleteButton;
+export default Button;
