@@ -11,7 +11,7 @@
 .curriculum-vitae-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     column-gap: 3rem;
 }
 
