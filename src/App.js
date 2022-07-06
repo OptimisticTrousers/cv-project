@@ -78,7 +78,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <form onSubmit={handleSubmit}>
-          <Header />
+          <Header conditionallyRender={conditionallyRender} />
           <Hello />
           <Interests />
           <CV conditionallyRender={conditionallyRender} submitted={submitted} />
