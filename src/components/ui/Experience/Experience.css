@@ -16,9 +16,6 @@ span.date{
 }
 .company-position{
     display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    align-items: center;
 }
 p.dates{
     display: flex;
@@ -40,5 +37,12 @@ p.dates{
         flex-direction: column;
         justify-content: start;
         align-items: start;
+    }
+    .company-position{
+        gap: 6px;
+    }
+
+    .company-position input {
+        width: 100%;
     }
 }
