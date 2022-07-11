@@ -92,4 +92,7 @@
     .education{
         text-align: center;
     }
+    .overview{
+        display: block;
+    }
 }
