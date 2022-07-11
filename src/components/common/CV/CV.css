@@ -63,29 +63,24 @@
         padding: 0 2rem;
     }
 
-    .overview{
-        flex-wrap: wrap;
-    }
     .contact{
         border-top: 3px dotted #e5e5e5;
-        width: 100%;
     }
 
     .curriculum-vitae-grid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .experience{
         grid-column: 1 / -1;
     }
     .education{
-        grid-column: 1 / 2;
+        grid-column: 1 / -1;
     }
     .skills{
-        grid-column: 2 / 3;
+        grid-column: 1 / -1;
     }
     .qualifications{
-        text-align: center;
-        grid-column: 3 / 4;
+        grid-column: 1 / -1;
     }
 
 }

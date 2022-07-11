@@ -33,3 +33,12 @@ p.dates{
         column-gap: 0.5rem;
     }
 }
+
+
+@media(max-width: 780px){
+    .experience-position {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}

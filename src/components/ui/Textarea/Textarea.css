@@ -1,5 +1,5 @@
 textarea{
     width: 100%;
-    resize: none;
+    resize: auto;
     line-height: 3;
 }
