@@ -25,3 +25,9 @@ body {
 h2{
     font-family: quantify-bold;
 }
+
+@media(max-width: 350px) {
+  body > * {
+    width: min-content;
+  }
+}
