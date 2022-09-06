@@ -9,6 +9,7 @@
     margin: 0 auto;
     column-gap: 2rem;
     margin-top: 2rem;
+    align-items: center;
 }
 button{
     padding: 0.25rem 0.75rem;
@@ -29,7 +30,7 @@ button:hover{
 }
 .buttons > button{
     width: max-content;
-    padding: 1rem 3rem;
+    padding: 0.75rem 2rem;
     color: white;
     background-color: #00a4e7;
     border: 0;
