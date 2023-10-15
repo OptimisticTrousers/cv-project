@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TOP-cv-project/static/css/main.6c9e9c3e.css",
+    "main.js": "/TOP-cv-project/static/js/main.0009f2cf.js",
+    "static/media/Quantify Bold v2.6.ttf": "/TOP-cv-project/static/media/Quantify Bold v2.6.0ef9927af211d8cf78a2.ttf",
+    "static/media/Jillican Heavy.ttf": "/TOP-cv-project/static/media/Jillican Heavy.13631409f3bf37243759.ttf",
+    "static/media/Futura Std Light.ttf": "/TOP-cv-project/static/media/Futura Std Light.2e733a36f2f999e6605d.ttf",
+    "static/media/optimistictrousers.jpg": "/TOP-cv-project/static/media/optimistictrousers.4a58476dd91f3053fd80.jpg",
+    "static/media/branding.png": "/TOP-cv-project/static/media/branding.6e2081510573353e37cf.png",
+    "static/media/website.png": "/TOP-cv-project/static/media/website.c8688b98bec5c0c4502f.png",
+    "static/media/contract.png": "/TOP-cv-project/static/media/contract.71ead828d82f7e642cc0.png",
+    "static/media/Fontspring-DEMO-hops_and_barley_c3b.otf": "/TOP-cv-project/static/media/Fontspring-DEMO-hops_and_barley_c3b.81bc3d72d10c3209ef3e.otf",
+    "index.html": "/TOP-cv-project/index.html",
+    "main.6c9e9c3e.css.map": "/TOP-cv-project/static/css/main.6c9e9c3e.css.map",
+    "main.0009f2cf.js.map": "/TOP-cv-project/static/js/main.0009f2cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c9e9c3e.css",
+    "static/js/main.0009f2cf.js"
+  ]
+}
