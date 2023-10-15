@@ -1,58 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
 }
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    margin: 0 auto;
-    column-gap: 2rem;
-    margin-top: 2rem;
-    align-items: center;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+  column-gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
 }
-button{
-    padding: 0.25rem 0.75rem;
-    background-color:#00a4e7;
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    border-radius: 500px;
-    color: white;
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+button {
+  padding: 0.5rem 0.75rem;
+  background-color: #ff6b6b;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease;
 }
-button:hover{
-    transition: all ease-in-out 0.2s;
-    background-color: black;
-    color: white;
-    cursor: pointer;
+button:hover {
+  transition: all 0.3s ease;
+  background-color: #ff3d3d; /* a slightly darker shade of the original color */
+  color: white;
+  border-color: #ff3d3d;
+  transform: scale(1.05); /* slightly enlarging the button for emphasis */
+  cursor: pointer; /* to indicate it's clickable */
 }
-.buttons > button{
-    width: max-content;
-    padding: 0.75rem 2rem;
-    color: white;
-    background-color: #00a4e7;
-    border: 0;
-    border-radius: 20%;
-}
-.buttons > button:hover{
-    transition: all ease-in-out 0.2s;
-    background-color: #78a5bd;
-    color: black;
-    cursor: pointer;
+.buttons > button {
+  width: max-content;
+  padding: 0.75rem 2rem;
+  color: white;
+  background-color: #ff6b6b;
+  border: 0;
+  border-radius: 4px;
 }
 
 input {
-    border-radius: 10px;
-    padding: 10px;
-    background-color: hsla(200,0%,0%,.7);
-    color: white;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #333333;
+  border: 1px solid #e0e0e0;
 }
 
-@media(max-width: 1280px){
-    .buttons{
-        width: 90%;
-    }
+@media (max-width: 1280px) {
+  .buttons {
+    width: 90%;
+  }
 }
-
