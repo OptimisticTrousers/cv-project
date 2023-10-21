@@ -2,7 +2,7 @@
   "name": "cv-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://OptimisticTrousers.github.io/TOP-cv-project",
+  "homepage": "https://OptimisticTrousers.github.io/cv-project",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
